@@ -1,0 +1,262 @@
+/* ************ General ************ */
+*{
+	outline: none;
+}
+
+.wrap{
+	width: 90%;
+	max-width: 11000px;
+	margin: auto;
+}
+
+.off-canvas-wrapper{
+	background-color: royalblue;
+}
+
+/* ************ Nav - Mobile ************ */
+.title-bar{
+	background-color: royalblue;
+	height: 60px;
+	padding-top: 17px;
+	font-family: Tahoma;
+}
+
+#mobile-menu{
+	background-color: royalblue;
+	padding: 18px;
+}
+
+#mobile-menu li{
+	list-style: none;
+	font-family: Tahoma;
+}
+
+#mobile-menu a{
+	color: white;
+	font-weight: bold;
+	line-height: 2;
+	font-size: 90%;
+	display: block;
+}
+
+#mobile-menu a:hover{
+	background-color: rgba(255, 255, 255, 0.1);
+}
+
+.js-off-canvas-exit{
+	background: rgba(65, 105, 225, 0.3);
+}
+
+.top-bar-right__logo{
+	color: white;
+	font-family: Tahoma;
+}
+
+
+/* ************ Nav - Desktop ************ */
+.nav-desktop{
+	background-color: royalblue;
+	height: 60px;
+	padding: 0px;
+}
+
+.top-bar-left__logo{
+	color: white;
+	line-height: 60px;
+	font-family: Tahoma;
+	font-size: 2.5vw;
+}
+
+.nav-desktop .top-bar-right-menu{
+	line-height: 60px;
+	background-color: transparent;
+	font-family: Tahoma;
+}
+
+.nav-desktop .top-bar-right-menu__itemlink{
+	display: inline-block;
+	line-height: 60px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	color: white;
+}
+
+.menu > li > a{
+	display: inline-block;
+	line-height: 60px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	color: white;
+}
+
+.nav-desktop .top-bar-right-menu__itemlink:hover, .top-bar-right-menu__itemlink--dropdown:hover{
+	background-color: rgba(255, 255, 255, 0.1);
+}
+
+.top-bar-right-menu__itemlink--dropdown{
+	font-family: Tahoma;	
+}
+
+.top-bar-right-menu > li > ul{
+	list-style-type: none;
+	background-color: royalblue;
+}
+
+.top-bar-right-menu > li > ul > li > a{
+	color: white;
+	display: block;
+	height: auto;
+	line-height: 50px;
+	text-align: center;
+	width: 300px;
+}
+
+.linkss > li{
+	display: block;
+}
+
+.linkss > li > a{
+	background-color: royalblue;
+	color: white;
+}
+
+.top-bar-right-menu__itemlink--dropdown--accordionlink > ul > li > a {	
+	color: white;
+	display: block;
+	height: auto;
+	line-height: 50px;
+	text-align: center;
+	width: 300px;
+}
+
+.top-bar-right-menu__itemlink--dropdown--accordionlink > ul > li > a:hover {	
+	background-color: rgba(255, 255, 255, 0.1);
+}
+
+.top-bar-right-menu__itemlink--dropdown--accordionlink > ul{
+	background-color: royalblue;
+}
+
+.top-bar-right-menu > li > ul > li > a:hover{
+	background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* ************ Hero ************ */
+.hero{
+	padding:80px 0;
+	height: auto;
+	background-image: url('../img/sneaker_mesh_fabric.png');
+}
+
+.hero-other{
+	padding:0 0;
+	height: auto;
+}
+
+.hero-other p,
+.hero h1,
+.hero p{
+	color: royalblue;
+	font-family: Josefin Sans;
+}
+
+.hero-other .wrap{
+	margin:0px 0px;
+	width:100%;
+}
+
+.hero-other h1{
+	font-size:4vw;
+	padding:10px 0px;
+	text-align:center;
+	color: white;
+	width:auto;
+	font-family: Josefin Sans;
+	height:80px;
+	line-height:60px;
+	background-color: rgba(65, 105, 225, 0.9);
+}
+
+.hero h1{
+	font-weight: bold;
+}
+
+.other-page-links{
+	display:inline-block;
+	padding-right:10px;
+}
+
+/* ************ Main Section ************ */
+.main,
+.main-contacts{
+	padding: 80px 0px;
+}
+
+.main-contacts p{
+	outline: solid royalblue thin;
+	text-align: center;
+	line-height:450px;
+}
+
+/* ************ Footer ************ */
+footer{
+	background-color: royalblue;
+	padding: 40px 0px;
+}
+
+footer hr{
+	border-color: rgba(255, 255, 255, 0.2);
+	margin: 10px 0px;
+}
+
+footer a {
+	display: block;
+	color: white;
+	font-size: 0.9em;
+	font-family: Tahoma;
+	width: auto;
+}
+
+footer li{
+	color:white;
+	font-size:1.05em;
+	font-family: Tahoma;
+	list-style-type:circle;
+}
+
+footer li:hover{
+	list-style-type: disc;
+}
+
+footer li span{
+	font-weight: bold;
+	color: rgba(255, 255, 255, 0.5);
+}
+
+footer a:hover{
+	background-color: rgba(255, 255, 255, 0.1);
+	color:white;
+}
+
+footer a:visited{
+	color:white;
+}
+
+footer a:link{
+	color:white;
+}
+
+footer h4{
+	color: rgba(255, 255, 255, 0.8);
+	font-size: 1.3em;
+}
+
+/* ************ Media Query ************ */
+
+@media (max-width: 639px) {
+
+	.nav-desktop{
+		display: none;
+	}
+
+}
