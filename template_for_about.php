@@ -1,20 +1,16 @@
 <!doctype html>
-
-<html class="no-js" lang="en">
-
-	<head>
-
-		<meta charset="utf-8">
-		<meta http-equiv="x-ua-compatible" content="ie=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-		<title><?php echo $page->title; ?></title>
-
-		<link rel="stylesheet" href="<?php echo $config->urls->templates; ?>css/foundation.css">
-		<link rel="stylesheet" href="<?php echo $config->urls->templates; ?>css/app.css">
-
-	</head>
-
+<html class="no-js" lang="en" dir="ltr">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title><?php
+		echo $page->title; ?></title>
+	<link rel="stylesheet" href="<?php
+	echo $config->urls->templates; ?>css/foundation.css">
+	<link rel="stylesheet" href="<?php
+	echo $config->urls->templates; ?>css/app.css">
+</head>
 	<body>
 
 		<div class="off-canvas-wrapper">
@@ -168,13 +164,15 @@
 				</nav>
 
 				<!-- Hero Section -->
-				<section class="hero">
+				<section class="hero-other">
 
-					<div class="wrap">
+					<div class="wrap linkss">
 
-						<h1><?php echo $page->hero_section_heading; ?></h1>
-						<p><?php echo $page->hero_section; ?></p>
-						<a href="<?php echo $pages->get(1017)->url;?>" class="button success">Contact Us</a>
+						<?php
+
+					 		echo "<h1>$page->title</h1>";
+
+						?>
 
 					</div>
 
@@ -185,20 +183,8 @@
 
 					<div class="wrap row">
 
-						<div class="small-12 medium-7 column">
+						<div class="small-12 large-6">
 
-						<h1>Main Section</h1>
-						<hr>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-							
-						</div>
-
-						<div class="small-12 medium-5 column">
-
-						<h1>Secondary Section</h1>
-						<hr>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-							
 						</div>
 
 					</div>
@@ -224,10 +210,10 @@
 
 							<h4>Site Map</h4>
 							<hr>
-							<li><a href="<?php echo $pages->get(1)->url;?>">Home</a></li>
-							<li><a href="<?php echo $pages->get(1015)->url;?>">What We Do</a></li>
-							<li><a href="<?php echo $pages->get(1016)->url;?>">About Us</a></li>
-							<li><a href="<?php echo $pages->get(1017)->url;?>">Contact Us</a></li>
+							<a href="<?php echo $pages->get(1)->url;?>">Home</a>
+							<a href="<?php echo $pages->get(1015)->url;?>">What We Do</a>
+							<a href="<?php echo $pages->get(1016)->url;?>">About Us</a>
+							<a href="<?php echo $pages->get(1017)->url;?>">Contact Us</a>
 
 						</div>
 

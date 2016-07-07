@@ -225,7 +225,7 @@
 
 						<div class="small-12 large-5 column">
 
-							<div id="googleMap" style="width:600px;height:450px;"></div>
+							<div id="googleMap" style=""></div>
 
 						</div>
 

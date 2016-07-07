@@ -98,7 +98,7 @@
 					</div>
 
 				<!-- Desktop Navigation -->
-				<nav class="top-bar nav-desktop">
+				<nav class="top-bar nav-desktop data-topbar role="navigation"">
 
 					<div class="wrap">
 

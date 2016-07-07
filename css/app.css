@@ -198,6 +198,12 @@
 	line-height:450px;
 }
 
+#googleMap{
+	margin-bottom:10px;
+	width:600px;
+	height:450px;
+}
+
 /* ************ Footer ************ */
 footer{
 	background-color: royalblue;
@@ -257,6 +263,14 @@ footer h4{
 
 	.nav-desktop{
 		display: none;
+	}
+
+}
+
+@media (max-width: 400px)
+
+	#googleMap{
+		width:200px;
 	}
 
 }
