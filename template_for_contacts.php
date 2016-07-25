@@ -196,7 +196,7 @@
 
 						<?php
 
-					 		echo "<h1>$page->title</h1>";
+							echo "<h1>$page->title</h1>";
 
 							echo "<ul>";
 
@@ -220,6 +220,24 @@
 
 				<!-- Main Section -->
 				<section class="main-contacts">
+
+					<div class="wrap row contactinfo">
+						
+						<div class="small-12 large-12 column">
+
+						<h1>Contact Information</h1>
+
+							<ul>
+							
+								<li class="item1">Phone Number:</li>
+								<li>Email Address:</li>
+								<li>Address:</li>
+
+							</ul>
+
+						</div>
+
+					</div>
 
 					<div class="wrap row">
 
@@ -257,10 +275,10 @@
 
 							<h4>Site Map</h4>
 							<hr>
-							<a href="<?php echo $pages->get(1)->url;?>">Home</a>
-							<a href="<?php echo $pages->get(1015)->url;?>">What We Do</a>
-							<a href="<?php echo $pages->get(1016)->url;?>">About Us</a>
-							<a href="<?php echo $pages->get(1017)->url;?>">Contact Us</a>
+							<li><a href="<?php echo $pages->get(1)->url;?>">Home</a></li>
+							<li><a href="<?php echo $pages->get(1015)->url;?>">What We Do</a></li>
+							<li><a href="<?php echo $pages->get(1016)->url;?>">About Us</a></li>
+							<li><a href="<?php echo $pages->get(1017)->url;?>">Contact Us</a></li>
 
 						</div>
 

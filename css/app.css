@@ -143,10 +143,24 @@
 
 /* ************ Hero ************ */
 .hero{
-	padding:80px 0;
+	padding:0 0;
 	height: auto;
-	background-image: url('../img/sneaker_mesh_fabric.png');
 }
+
+.orbit-container{
+	height:auto !important;
+}
+
+.hero .wrap{
+	margin: 0 0;
+	width:100%;
+	height: auto;
+}
+
+.hero .orbit-container{
+	width:100%;
+}
+
 
 .hero-other{
 	padding:0 0;
@@ -158,6 +172,13 @@
 .hero p{
 	color: royalblue;
 	font-family: Josefin Sans;
+}
+
+.hero h1{
+	text-align:left;
+	padding: 10px 0;
+	margin:0 0;
+	font-size:3vw;
 }
 
 .hero-other .wrap{
@@ -192,6 +213,58 @@
 	padding: 80px 0px;
 }
 
+.main a{
+	height:auto;
+	width:auto;
+	display:block;
+	text-align:center;
+	background-repeat: no-repeat;
+	padding:20px 0;
+	font-size:2vw;
+	font-weight:bold;
+	color:black;
+}
+
+.main a:hover{
+	opacity:0.6;
+	color:red;
+}
+
+.link1{
+	line-height:410px;
+	background-image:url('http://www.louthnewryarchives.ie/graphics/exhib/gnr/engineeringduffnerr504-dkjworks-carriage-building-shop-14-4-44.jpg');
+}
+
+.link2{
+	line-height:410px;
+	background-image:url('http://www.louthnewryarchives.ie/graphics/exhib/gnr/workersgnr23mm5-erecting-shop.jpg');
+}
+
+.link3{
+	line-height:417px;
+	background-image:url('http://i.istockimg.com/file_thumbview_approve/20736619/6/stock-photo-20736619-engineering.jpg');
+}
+
+.link4{
+	line-height:417px;
+	background-image:url('http://i.istockimg.com/file_thumbview_approve/20736619/6/stock-photo-20736619-engineering.jpg');
+}
+
+.link5{
+	line-height:417px;
+	background-image:url('http://i.istockimg.com/file_thumbview_approve/20736619/6/stock-photo-20736619-engineering.jpg');
+}
+
+.link6{
+	line-height:417px;
+	background-image:url('http://i.istockimg.com/file_thumbview_approve/20736619/6/stock-photo-20736619-engineering.jpg');
+}
+
+.link7{
+	line-height:417px;
+	background-image:url('http://i.istockimg.com/file_thumbview_approve/20736619/6/stock-photo-20736619-engineering.jpg');
+}
+
 .main-contacts p{
 	outline: solid royalblue thin;
 	text-align: center;
@@ -202,6 +275,16 @@
 	margin-bottom:10px;
 	width:600px;
 	height:450px;
+}
+
+.contactinfo{
+	text-align:center;
+	padding-bottom:80px;
+}
+
+.contactinfo li{
+	list-style-type:none;
+	display:block;
 }
 
 /* ************ Footer ************ */

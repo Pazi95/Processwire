@@ -166,11 +166,11 @@
 				<!-- Hero Section -->
 				<section class="hero-other">
 
-					<div class="wrap linkss">
+					<div class="wrap">
 
 						<?php
 
-					 		echo "<h1>$page->title</h1>";
+							echo "<h1>$page->title</h1>";
 
 						?>
 
@@ -183,10 +183,35 @@
 
 					<div class="wrap row">
 
-						<div class="small-12 large-6">
+						<div class="small-12 large-6 column">
+
+							<h1>A paragraph about us.</h1>
+							<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
 
 						</div>
 
+						<div class="small-12 large-6 column">
+									
+							<h1>An Image Here</h1>	
+
+						</div>
+
+					</div>
+
+					<div class="wrap row">
+
+						<div class="small-12 large-6 column">
+
+							<a class="link1" href="<?php echo $pages->get(1030)->url;?>">Click Here To Learn About Our History</a>	
+
+						</div>
+
+						<div class="small-12 large-6 column">
+
+							<a class="link2" href="<?php echo $pages->get(1031)->url;?>">Click Here To Learn About Our Team</a>	
+
+						</div>
+						
 					</div>
 
 				</section>
@@ -210,10 +235,10 @@
 
 							<h4>Site Map</h4>
 							<hr>
-							<a href="<?php echo $pages->get(1)->url;?>">Home</a>
-							<a href="<?php echo $pages->get(1015)->url;?>">What We Do</a>
-							<a href="<?php echo $pages->get(1016)->url;?>">About Us</a>
-							<a href="<?php echo $pages->get(1017)->url;?>">Contact Us</a>
+							<li><a href="<?php echo $pages->get(1)->url;?>">Home</a></li>
+							<li><a href="<?php echo $pages->get(1015)->url;?>">What We Do</a></li>
+							<li><a href="<?php echo $pages->get(1016)->url;?>">About Us</a></li>
+							<li><a href="<?php echo $pages->get(1017)->url;?>">Contact Us</a></li>
 
 						</div>
 
