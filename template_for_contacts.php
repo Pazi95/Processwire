@@ -11,6 +11,7 @@
 	<title><?php echo $page->title; ?></title>
 	<link rel="stylesheet" href="<?php echo $config->urls->templates; ?>css/foundation.css">
 	<link rel="stylesheet" href="<?php echo $config->urls->templates; ?>css/app.css">
+	<link rel="stylesheet" href="<?php echo $config->urls->templates; ?>foundation-icons/foundation-icons.css">
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAfleDtpQf4QFVnZ6pcuW8yDFvKFbIqfrE&callback=initMap"></script>
 	<script>
 	var myCenter=new google.maps.LatLng(53.995216,-6.413037000000031);
@@ -120,9 +121,11 @@
 
 						<h1>Contact Information</h1>
 
+							<i class="fi-telephone"></i>
+
 							<ul>
 							
-								<li class="item1">Phone Number:</li>
+								<li><a>Phone Number:</a></li>
 								<li>Email Address:</li>
 								<li>Address:</li>
 

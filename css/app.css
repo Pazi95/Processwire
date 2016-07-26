@@ -190,8 +190,8 @@ body.home a.home:hover, body.aboutus a.aboutus:hover, body.contactus a.contactus
 
 .main img{
 	height: 300px;
-    width: 30%;
-    float:left;
+	width: 30%;
+	float:left;
 }
 
 .main h3{
@@ -246,6 +246,12 @@ sticky_menu li > a:focus{
 
 /* Contact Us Page */
 
+.main-contacts i{
+	font-size:50px;
+	color:royalblue;
+	float:middle;
+}
+
 .main-contacts{
 	padding: 80px 0px;
 }
@@ -254,6 +260,14 @@ sticky_menu li > a:focus{
 	outline: solid royalblue thin;
 	text-align: center;
 	line-height:450px;
+}
+
+.main-contacts a{
+	float:middle;
+}
+
+.contactinfo{
+	border:royalblue solid 1px;
 }
 
 #googleMap{
@@ -265,6 +279,10 @@ sticky_menu li > a:focus{
 .contactinfo{
 	text-align:center;
 	padding-bottom:80px;
+}
+
+.contactinfo h1{
+	color:royalblue;
 }
 
 .contactinfo li{

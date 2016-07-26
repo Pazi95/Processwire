@@ -12,6 +12,7 @@
 
 		<link rel="stylesheet" href="<?php echo $config->urls->templates; ?>css/foundation.css">
 		<link rel="stylesheet" href="<?php echo $config->urls->templates; ?>css/app.css">
+		<link rel="stylesheet" href="<?php echo $config->urls->templates; ?>foundation-icons/foundation-icons.css">
 
 	</head>
 
