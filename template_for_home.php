@@ -15,7 +15,7 @@
 
 	</head>
 
-	<body>
+	<body class="home">
 
 		<div class="off-canvas-wrapper">
 
@@ -23,52 +23,11 @@
 
 				<div class="off-canvas position-left" id="mobile-menu" data-off-canvas>
 
-					<ul class="vertical menu" data-accordion-menu>
+					<ul class="vertical menu">
 
 						<li><a href="<?php echo $pages->get(1)->url; ?>">Home</a></li>
-						<li><a href="<?php echo $pages->get(1015)->url; ?>">What We Do</a>
-
-							<ul class="menu vertical nested">
-													
-								<li><a href="<?php echo $pages->get(1019)->url; ?>">Vehicle Maintenance & Repairs</a>
-
-									<ul class="menu vertical nested">
-
-										<li><a href="<?php echo $pages->get(1024)->url; ?>">HGV-Vehicle Maintenance</a></li>
-										<li><a href="<?php echo $pages->get(1025)->url; ?>">LGV-Vehicle Maintenance</a></li>
-										<li><a href="<?php echo $pages->get(1026)->url;?>">Bus Maintenance and Repairs</a></li>
-										<li><a href="<?php echo $pages->get(1027)->url;?>">Fleet Management</a></li>
-
-									</ul>
-
-								</li>
-								<li><a href="<?php echo $pages->get(1020)->url;?>">General Engineering</a></li>
-								<li><a href="<?php echo $pages->get(1021)->url;?>">Chassis Repairs</a></li>
-								<li><a href="<?php echo $pages->get(1022)->url;?>">Welding and Fabrication Work</a>
-
-									<ul class="menu vertical nested">
-
-										<li><a href="<?php echo $pages->get(1028)->url;?>">Steel Fabrication</a></li>
-										<li><a href="<?php echo $pages->get(1029)->url;?>">Lifting Equipment</a></li>
-
-									</ul>
-
-								</li>
-								<li><a href="<?php echo $pages->get(1023)->url;?>">Machine Installation</a></li>
-
-							</ul>
-
-						</li>			
-						<li><a href="<?php echo $pages->get(1016)->url;?>">About Us</a>
-
-							<ul class="menu vertical nested">
-
-								<li><a href="<?php echo $pages->get(1030)->url;?>">History</a></li>
-								<li><a href="<?php echo $pages->get(1031)->url;?>">Team</a></li>
-
-							</ul>
-
-						</li>
+						<li><a href="<?php echo $pages->get(1015)->url; ?>">What We Do</a></li>			
+						<li><a href="<?php echo $pages->get(1016)->url;?>">About Us</a></li>
 						<li><a href="<?php echo $pages->get(1017)->url;?>">Contact Us</a></li>
 
 					</ul>
@@ -98,7 +57,7 @@
 					</div>
 
 				<!-- Desktop Navigation -->
-				<nav class="top-bar nav-desktop data-topbar" role="navigation" data-sticky-container>
+				<nav class="top-bar nav-desktop data-topbar" role="navigation">
 
 					<div class="wrap">
 
@@ -110,54 +69,16 @@
 
 						<div class="top-bar-right">
 
-							<ul class="dropdown menu top-bar-right-menu" data-dropdown-menu>
+							<ul class="menu top-bar-right-menu">
 
-								<li><a href="<?php echo $pages->get(1)->url;?>" class="top-bar-right-menu__itemlink">Home</a></li>
+								<li><a href="<?php echo $pages->get(1)->url;?>" class="top-bar-right-menu__itemlink home">Home</a></li>
 								<li><a href="<?php echo $pages->get(1015)->url;?>" class="top-bar-right-menu__itemlink--dropdown">What We Do</a>
-
-									<ul class="vertical menu" data-accordion-menu>
-
-										<li class="top-bar-right-menu__itemlink--dropdown--accordionlink"><a href="<?php echo $pages->get(1019)->url;?>">Vehicle Maintenance & Repairs</a>
-																		
-											<ul class="menu vertical nested">
-																				
-												<li><a href="<?php echo $pages->get(1024)->url;?>">HGV-Vehicle Maintenance</a></li>
-												<li><a href="<?php echo $pages->get(1025)->url;?>">LGV-Vehicle Maintenance</a></li>
-												<li><a href="<?php echo $pages->get(1026)->url;?>">Bus Maintenance and Repairs</a></li>
-												<li><a href="<?php echo $pages->get(1027)->url;?>">Fleet Management</a></li>
-
-											</ul>
-
-										</li>
-
-										<li><a href="<?php echo $pages->get(1020)->url;?>">General Engineering</a></li>
-										<li><a href="<?php echo $pages->get(1021)->url;?>">Chassis Repairs</a></li>
-										<li class="top-bar-right-menu__itemlink--dropdown--accordionlink"><a href="<?php echo $pages->get(1022)->url;?>">Welding and Fabrication Work</a>
-
-											<ul class="menu vertical nested">
-
-												<li><a href="<?php echo $pages->get(1028)->url;?>">Steel Fabrication</a></li>
-												<li><a href="<?php echo $pages->get(1029)->url;?>">Lifting Equipment</a></li>
-
-											</ul>
-
-										</li>
-										<li><a href="<?php echo $pages->get(1023)->url;?>">Machine Installation</a></li>
-
-									</ul>
 
 								</li>
 								<li><a href="<?php echo $pages->get(1016)->url;?>" class="top-bar-right-menu__itemlink--dropdown">About Us</a>
-														
-									<ul>
-																
-										<li><a href="<?php echo $pages->get(1030)->url;?>">History</a></li>
-										<li><a href="<?php echo $pages->get(1031)->url;?>">Team</a></li>
-														
-									</ul>
 												
 								</li>
-								<li><a href="<?php echo $pages->get(1017)->url;?>" class="top-bar-right-menu__itemlink">Contact Us</a></li>
+								<li><a href="<?php echo $pages->get(1017)->url;?>" class="top-bar-right-menu__itemlinkx0">Contact Us</a></li>
 
 							</ul>
 
@@ -185,29 +106,29 @@
 							  <?php 
 							  $images = array();
 							  foreach($page->carousel_images as $image){
-							  	$images[] = $image->url;
+								$images[] = $image->url;
 							  }
 							  
 							  ?>
 
 							  <li class="orbit-slide is-active">
-							    <?php echo "<img class='orbit-image' src='$images[0]'>"; ?>
-							    <figcaption class="orbit-caption">Pic1</figcaption>
+								<?php echo "<img class='orbit-image' src='$images[0]'>"; ?>
+								<figcaption class="orbit-caption">Pic1</figcaption>
 							  </li>
 
 							  <li class="orbit-slide">
-							    <?php echo "<img class='orbit-image' src='$images[1]'>"; ?>
-							    <figcaption class="orbit-caption">Pic2</figcaption>
+								<?php echo "<img class='orbit-image' src='$images[1]'>"; ?>
+								<figcaption class="orbit-caption">Pic2</figcaption>
 							  </li>
 
 							  <li class="orbit-slide">
-							    <?php echo "<img class='orbit-image' src='$images[2]'>"; ?>
-							    <figcaption class="orbit-caption">Pic3</figcaption>
+								<?php echo "<img class='orbit-image' src='$images[2]'>"; ?>
+								<figcaption class="orbit-caption">Pic3</figcaption>
 							  </li>
 
 							  <li class="orbit-slide">
-							    <?php echo "<img class='orbit-image' src='$images[3]'>"; ?>
-							    <figcaption class="orbit-caption">Pic4</figcaption>
+								<?php echo "<img class='orbit-image' src='$images[3]'>"; ?>
+								<figcaption class="orbit-caption">Pic4</figcaption>
 							  </li>
 
 							</ul>
@@ -237,7 +158,7 @@
 
 						<div class="small-12 medium-7 column">
 
-						<h1>Main Section</h1>
+						<h1>Brief Description</h1>
 						<hr>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 							
@@ -245,10 +166,6 @@
 
 						<div class="small-12 medium-5 column">
 
-						<h1>Secondary Section</h1>
-						<hr>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-							
 						</div>
 
 					</div>

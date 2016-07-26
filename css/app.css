@@ -120,25 +120,16 @@
 	color: white;
 }
 
-.top-bar-right-menu__itemlink--dropdown--accordionlink > ul > li > a {	
-	color: white;
-	display: block;
-	height: auto;
-	line-height: 50px;
-	text-align: center;
-	width: 300px;
+body.home a.home, body.aboutus a.aboutus, body.contactus a.contactus, body.whatwedo a.whatwedo{
+	color:royalblue;
+	background-color:white;
+	font-size: 30px;
+	font-weight:bold;
 }
 
-.top-bar-right-menu__itemlink--dropdown--accordionlink > ul > li > a:hover {	
-	background-color: rgba(255, 255, 255, 0.1);
-}
-
-.top-bar-right-menu__itemlink--dropdown--accordionlink > ul{
-	background-color: royalblue;
-}
-
-.top-bar-right-menu > li > ul > li > a:hover{
-	background-color: rgba(255, 255, 255, 0.1);
+body.home a.home:hover, body.aboutus a.aboutus:hover, body.contactus a.contactus:hover, body.whatwedo a.whatwedo:hover{
+	color:royalblue;
+	background-color:white;
 }
 
 /* ************ Hero ************ */
@@ -147,27 +138,21 @@
 	height: auto;
 }
 
+/*main page carousel*/
 .orbit-container{
 	height:auto !important;
 }
 
 .hero .wrap{
-	margin: 0 0;
-	width:100%;
+	width:90%;
 	height: auto;
 }
 
+/*main page carousel*/
 .hero .orbit-container{
 	width:100%;
 }
 
-
-.hero-other{
-	padding:0 0;
-	height: auto;
-}
-
-.hero-other p,
 .hero h1,
 .hero p{
 	color: royalblue;
@@ -181,23 +166,6 @@
 	font-size:3vw;
 }
 
-.hero-other .wrap{
-	margin:0px 0px;
-	width:100%;
-}
-
-.hero-other h1{
-	font-size:4vw;
-	padding:10px 0px;
-	text-align:center;
-	color: white;
-	width:auto;
-	font-family: Josefin Sans;
-	height:80px;
-	line-height:60px;
-	background-color: rgba(65, 105, 225, 0.9);
-}
-
 .hero h1{
 	font-weight: bold;
 }
@@ -208,10 +176,56 @@
 }
 
 /* ************ Main Section ************ */
-.main,
-.main-contacts{
-	padding: 80px 0px;
+.main{
+	padding: 0px 0px;
+	margin: 0 0;
 }
+
+.main section{
+	height:100vh;
+	border-top: dashed royalblue 1px;
+	border-bottom:0px;
+	color:royalblue;
+}
+
+.main img{
+	height: 300px;
+    width: 30%;
+    float:left;
+}
+
+.main h3{
+	width: auto;
+}
+
+/* ************ Magellan ************ */ 
+.sticky_menu li > a{
+	color:royalblue;
+	display:inline-block;
+	width:100%;
+}
+
+.sticky_menu li > a:hover{
+	background-color:royalblue;
+	color:white;
+}
+
+.sticky_menu li{
+	background-color:white;
+	text-align:center;
+	border-bottom:solid royalblue;
+}
+
+sticky_menu li > a:focus{
+	color:red;
+}
+
+#first{
+	border-top:none;
+	margin-top:70px;
+}
+
+/* ***** Menu Square Stylings ***** */
 
 .main a{
 	height:auto;
@@ -230,39 +244,10 @@
 	color:red;
 }
 
-.link1{
-	line-height:410px;
-	background-image:url('http://www.louthnewryarchives.ie/graphics/exhib/gnr/engineeringduffnerr504-dkjworks-carriage-building-shop-14-4-44.jpg');
-}
+/* Contact Us Page */
 
-.link2{
-	line-height:410px;
-	background-image:url('http://www.louthnewryarchives.ie/graphics/exhib/gnr/workersgnr23mm5-erecting-shop.jpg');
-}
-
-.link3{
-	line-height:417px;
-	background-image:url('http://i.istockimg.com/file_thumbview_approve/20736619/6/stock-photo-20736619-engineering.jpg');
-}
-
-.link4{
-	line-height:417px;
-	background-image:url('http://i.istockimg.com/file_thumbview_approve/20736619/6/stock-photo-20736619-engineering.jpg');
-}
-
-.link5{
-	line-height:417px;
-	background-image:url('http://i.istockimg.com/file_thumbview_approve/20736619/6/stock-photo-20736619-engineering.jpg');
-}
-
-.link6{
-	line-height:417px;
-	background-image:url('http://i.istockimg.com/file_thumbview_approve/20736619/6/stock-photo-20736619-engineering.jpg');
-}
-
-.link7{
-	line-height:417px;
-	background-image:url('http://i.istockimg.com/file_thumbview_approve/20736619/6/stock-photo-20736619-engineering.jpg');
+.main-contacts{
+	padding: 80px 0px;
 }
 
 .main-contacts p{
@@ -286,6 +271,8 @@
 	list-style-type:none;
 	display:block;
 }
+
+/* Contact Us Page End */
 
 /* ************ Footer ************ */
 footer{

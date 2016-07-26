@@ -11,7 +11,7 @@
 	<link rel="stylesheet" href="<?php
 	echo $config->urls->templates; ?>css/app.css">
 </head>
-	<body>
+	<body class="whatwedo">
 
 		<div class="off-canvas-wrapper">
 
@@ -19,52 +19,11 @@
 
 				<div class="off-canvas position-left" id="mobile-menu" data-off-canvas>
 
-					<ul class="vertical menu" data-accordion-menu>
+					<ul class="vertical menu">
 
 						<li><a href="<?php echo $pages->get(1)->url; ?>">Home</a></li>
-						<li><a href="<?php echo $pages->get(1015)->url; ?>">What We Do</a>
-
-							<ul class="menu vertical nested">
-													
-								<li><a href="<?php echo $pages->get(1019)->url; ?>">Vehicle Maintenance & Repairs</a>
-
-									<ul class="menu vertical nested">
-
-										<li><a href="<?php echo $pages->get(1024)->url; ?>">HGV-Vehicle Maintenance</a></li>
-										<li><a href="<?php echo $pages->get(1025)->url; ?>">LGV-Vehicle Maintenance</a></li>
-										<li><a href="<?php echo $pages->get(1026)->url;?>">Bus Maintenance and Repairs</a></li>
-										<li><a href="<?php echo $pages->get(1027)->url;?>">Fleet Management</a></li>
-
-									</ul>
-
-								</li>
-								<li><a href="<?php echo $pages->get(1020)->url;?>">General Engineering</a></li>
-								<li><a href="<?php echo $pages->get(1021)->url;?>">Chassis Repairs</a></li>
-								<li><a href="<?php echo $pages->get(1022)->url;?>">Welding and Fabrication Work</a>
-
-									<ul class="menu vertical nested">
-
-										<li><a href="<?php echo $pages->get(1028)->url;?>">Steel Fabrication</a></li>
-										<li><a href="<?php echo $pages->get(1029)->url;?>">Lifting Equipment</a></li>
-
-									</ul>
-
-								</li>
-								<li><a href="<?php echo $pages->get(1023)->url;?>">Machine Installation</a></li>
-
-							</ul>
-
-						</li>			
-						<li><a href="<?php echo $pages->get(1016)->url;?>">About Us</a>
-
-							<ul class="menu vertical nested">
-
-								<li><a href="<?php echo $pages->get(1030)->url;?>">History</a></li>
-								<li><a href="<?php echo $pages->get(1031)->url;?>">Team</a></li>
-
-							</ul>
-
-						</li>
+						<li><a href="<?php echo $pages->get(1015)->url; ?>">What We Do</a></li>			
+						<li><a href="<?php echo $pages->get(1016)->url;?>">About Us</a></li>
 						<li><a href="<?php echo $pages->get(1017)->url;?>">Contact Us</a></li>
 
 					</ul>
@@ -106,53 +65,11 @@
 
 						<div class="top-bar-right">
 
-							<ul class="dropdown menu top-bar-right-menu" data-dropdown-menu>
+							<ul class="menu top-bar-right-menu">
 
 								<li><a href="<?php echo $pages->get(1)->url;?>" class="top-bar-right-menu__itemlink">Home</a></li>
-								<li><a href="<?php echo $pages->get(1015)->url;?>" class="top-bar-right-menu__itemlink--dropdown">What We Do</a>
-
-									<ul class="vertical menu" data-accordion-menu>
-
-										<li class="top-bar-right-menu__itemlink--dropdown--accordionlink"><a href="<?php echo $pages->get(1019)->url;?>">Vehicle Maintenance & Repairs</a>
-																		
-											<ul class="menu vertical nested">
-																				
-												<li><a href="<?php echo $pages->get(1024)->url;?>">HGV-Vehicle Maintenance</a></li>
-												<li><a href="<?php echo $pages->get(1025)->url;?>">LGV-Vehicle Maintenance</a></li>
-												<li><a href="<?php echo $pages->get(1026)->url;?>">Bus Maintenance and Repairs</a></li>
-												<li><a href="<?php echo $pages->get(1027)->url;?>">Fleet Management</a></li>
-
-											</ul>
-
-										</li>
-
-										<li><a href="<?php echo $pages->get(1020)->url;?>">General Engineering</a></li>
-										<li><a href="<?php echo $pages->get(1021)->url;?>">Chassis Repairs</a></li>
-										<li class="top-bar-right-menu__itemlink--dropdown--accordionlink"><a href="<?php echo $pages->get(1022)->url;?>">Welding and Fabrication Work</a>
-
-											<ul class="menu vertical nested">
-
-												<li><a href="<?php echo $pages->get(1028)->url;?>">Steel Fabrication</a></li>
-												<li><a href="<?php echo $pages->get(1029)->url;?>">Lifting Equipment</a></li>
-
-											</ul>
-
-										</li>
-										<li><a href="<?php echo $pages->get(1023)->url;?>">Machine Installation</a></li>
-
-									</ul>
-
-								</li>
-								<li><a href="<?php echo $pages->get(1016)->url;?>" class="top-bar-right-menu__itemlink--dropdown">About Us</a>
-														
-									<ul>
-																
-										<li><a href="<?php echo $pages->get(1030)->url;?>">History</a></li>
-										<li><a href="<?php echo $pages->get(1031)->url;?>">Team</a></li>
-														
-									</ul>
-												
-								</li>
+								<li><a href="<?php echo $pages->get(1015)->url;?>" class="top-bar-right-menu__itemlink--dropdown whatwedo">What We Do</a></li>
+								<li><a href="<?php echo $pages->get(1016)->url;?>" class="top-bar-right-menu__itemlink--dropdown">About Us</a></li>
 								<li><a href="<?php echo $pages->get(1017)->url;?>" class="top-bar-right-menu__itemlink">Contact Us</a></li>
 
 							</ul>
@@ -166,64 +83,84 @@
 				<!-- Hero Section -->
 				<section class="hero-other">
 
-					<div class="wrap linkss">
-
-						<?php
-
-							echo "<h1>$page->title</h1>";
-
-						?>
-
-					</div>
-
 				</section>
 
+				<!-- Sticky Nav -->
+
+				<div data-sticky-container>
+
+				  <div class="sticky show-for-large" id="example" data-sticky data-margin-top="0" style="width:100%;" data-top-anchor="stickhere">
+
+				    <nav data-magellan data-bar-offset="37" class="sticky_menu">
+
+				      <ul id="stickhere" class="horizontal menu expanded">
+
+				      	<li><a href="#first">Vehicle Maintenance & Repairs</a></li>
+				      	<li><a href="#second">General Engineering</a></li>
+				      	<li><a href="#third">Chassis Repairs</a></li>
+				      	<li><a href="#fourth">Welding & Fabrication Work</a></li>
+				      	<li><a href="#fifth">Machine Installation</a></li>
+				      
+				      </ul>
+				    
+				    </nav>
+				  
+				  </div>
+				
+				</div>
+
 				<!-- Main Section -->
-				<section class="main">
 
-					<div class="wrap row">
+				<section class="main wrap">
 
-						<div class="small-12 large-6 column">
-							
-							<a class="link3" href="<?php echo $pages->get(1019)->url;?>">Vehicle Maintenance & Repairs</a>
+					<div class="sections">
 
-						</div>
+				        <section id="first">
+				        	
+				        	<h2>Vehicle Maintenance and Repairs</h2>
+				        	<img src="http://images.hgmsites.net/med/car-repair_100311664_m.jpg">
+				        	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tristique, risus non consectetur semper, lacus dolor suscipit magna, a dignissim dolor sapien eget velit. Nulla arcu tellus, gravida a sapien ac, finibus sodales lacus. Morbi elit nisi, sodales eu nisl eu, malesuada luctus justo. Donec id metus nunc. Nam eu magna a orci sollicitudin luctus eu fermentum risus. Morbi tempus, ligula et tempor aliquam, neque dui eleifend nisi, nec feugiat metus augue ac mauris. Ut auctor id felis id congue. Praesent ut eleifend lectus.Pellentesque in orci sem. Phasellus nibh nisl, interdum at dignissim ut, luctus nec nisl. Etiam consequat hendrerit porttitor. Proin ut ultricies neque. Donec vehicula sollicitudin porttitor. Sed vitae consequat nisl. Pellentesque placerat pulvinar vestibulum.Donec gravida commodo faucibus. Praesent suscipit nisi eget finibus lacinia. Ut sapien urna, venenatis in ipsum id, pharetra viverra augue. Nam egestas blandit placerat. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam suscipit pellentesque mauris, a ornare nisl rutrum sed. Maecenas lectus urna, dignissim nec lacus venenatis, fringilla ultricies lorem. Aenean maximus, sapien et bibendum rhoncus, elit massa tempor nisl, eu lobortis felis dolor ut nisl. Nam aliquam enim auctor auctor posuere. Cras volutpat ut nisi pharetra rutrum. Maecenas aliquet pharetra augue, id sodales eros fermentum congue. Pellentesque at metus blandit, auctor ligula vel, feugiat arcu. Proin nec suscipit neque.</p>
+
+				        </section>
+
+				        <section id="second">
+				        	
+				        	<h2>General Engineering</h2>
+				        	<img src="http://images.hgmsites.net/med/car-repair_100311664_m.jpg">
+				        	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tristique, risus non consectetur semper, lacus dolor suscipit magna, a dignissim dolor sapien eget velit. Nulla arcu tellus, gravida a sapien ac, finibus sodales lacus. Morbi elit nisi, sodales eu nisl eu, malesuada luctus justo. Donec id metus nunc. Nam eu magna a orci sollicitudin luctus eu fermentum risus. Morbi tempus, ligula et tempor aliquam, neque dui eleifend nisi, nec feugiat metus augue ac mauris. Ut auctor id felis id congue. Praesent ut eleifend lectus.Pellentesque in orci sem. Phasellus nibh nisl, interdum at dignissim ut, luctus nec nisl. Etiam consequat hendrerit porttitor. Proin ut ultricies neque. Donec vehicula sollicitudin porttitor. Sed vitae consequat nisl. Pellentesque placerat pulvinar vestibulum.Donec gravida commodo faucibus. Praesent suscipit nisi eget finibus lacinia. Ut sapien urna, venenatis in ipsum id, pharetra viverra augue. Nam egestas blandit placerat. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam suscipit pellentesque mauris, a ornare nisl rutrum sed. Maecenas lectus urna, dignissim nec lacus venenatis, fringilla ultricies lorem. Aenean maximus, sapien et bibendum rhoncus, elit massa tempor nisl, eu lobortis felis dolor ut nisl. Nam aliquam enim auctor auctor posuere. Cras volutpat ut nisi pharetra rutrum. Maecenas aliquet pharetra augue, id sodales eros fermentum congue. Pellentesque at metus blandit, auctor ligula vel, feugiat arcu. Proin nec suscipit neque.</p>
 
 
-						<div class="small-12 large-6 column">
-							
-							<a class="link4" href="<?php echo $pages->get(1020)->url;?>">General Engineering</a>
+				        </section>
 
-						</div>
+				        <section id="third">
+				        	
+				        	<h2>Chassis Repairs</h2>
+				        	<img src="http://images.hgmsites.net/med/car-repair_100311664_m.jpg">
+				        	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tristique, risus non consectetur semper, lacus dolor suscipit magna, a dignissim dolor sapien eget velit. Nulla arcu tellus, gravida a sapien ac, finibus sodales lacus. Morbi elit nisi, sodales eu nisl eu, malesuada luctus justo. Donec id metus nunc. Nam eu magna a orci sollicitudin luctus eu fermentum risus. Morbi tempus, ligula et tempor aliquam, neque dui eleifend nisi, nec feugiat metus augue ac mauris. Ut auctor id felis id congue. Praesent ut eleifend lectus.Pellentesque in orci sem. Phasellus nibh nisl, interdum at dignissim ut, luctus nec nisl. Etiam consequat hendrerit porttitor. Proin ut ultricies neque. Donec vehicula sollicitudin porttitor. Sed vitae consequat nisl. Pellentesque placerat pulvinar vestibulum.Donec gravida commodo faucibus. Praesent suscipit nisi eget finibus lacinia. Ut sapien urna, venenatis in ipsum id, pharetra viverra augue. Nam egestas blandit placerat. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam suscipit pellentesque mauris, a ornare nisl rutrum sed. Maecenas lectus urna, dignissim nec lacus venenatis, fringilla ultricies lorem. Aenean maximus, sapien et bibendum rhoncus, elit massa tempor nisl, eu lobortis felis dolor ut nisl. Nam aliquam enim auctor auctor posuere. Cras volutpat ut nisi pharetra rutrum. Maecenas aliquet pharetra augue, id sodales eros fermentum congue. Pellentesque at metus blandit, auctor ligula vel, feugiat arcu. Proin nec suscipit neque.</p>
 
-					</div>
 
-					<div class="wrap row">
+				        </section>
 
-						<div class="small-12 large-6 column">
-							
-							<a class="link5" href="<?php echo $pages->get(1021)->url;?>">Chassis Repairs</a>
+				        <section id="fourth">
+				        	
+				        	<h2>Welding and Fabrication Work</h2>
+				        	<img src="http://images.hgmsites.net/med/car-repair_100311664_m.jpg">
+				        	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tristique, risus non consectetur semper, lacus dolor suscipit magna, a dignissim dolor sapien eget velit. Nulla arcu tellus, gravida a sapien ac, finibus sodales lacus. Morbi elit nisi, sodales eu nisl eu, malesuada luctus justo. Donec id metus nunc. Nam eu magna a orci sollicitudin luctus eu fermentum risus. Morbi tempus, ligula et tempor aliquam, neque dui eleifend nisi, nec feugiat metus augue ac mauris. Ut auctor id felis id congue. Praesent ut eleifend lectus.Pellentesque in orci sem. Phasellus nibh nisl, interdum at dignissim ut, luctus nec nisl. Etiam consequat hendrerit porttitor. Proin ut ultricies neque. Donec vehicula sollicitudin porttitor. Sed vitae consequat nisl. Pellentesque placerat pulvinar vestibulum.Donec gravida commodo faucibus. Praesent suscipit nisi eget finibus lacinia. Ut sapien urna, venenatis in ipsum id, pharetra viverra augue. Nam egestas blandit placerat. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam suscipit pellentesque mauris, a ornare nisl rutrum sed. Maecenas lectus urna, dignissim nec lacus venenatis, fringilla ultricies lorem. Aenean maximus, sapien et bibendum rhoncus, elit massa tempor nisl, eu lobortis felis dolor ut nisl. Nam aliquam enim auctor auctor posuere. Cras volutpat ut nisi pharetra rutrum. Maecenas aliquet pharetra augue, id sodales eros fermentum congue. Pellentesque at metus blandit, auctor ligula vel, feugiat arcu. Proin nec suscipit neque.</p>
 
-						</div>
 
-						
-						<div class="small-12 large-6 column">
-							
-							<a class="link6" href="<?php echo $pages->get(1022)->url;?>">Welding and Fabrication Work</a>
+				        </section>
 
-						</div>
 
-					</div>
+				        <section id="fifth">
+				        	
+				        	<h2>Machine Installation</h2>
+				        	<img src="http://images.hgmsites.net/med/car-repair_100311664_m.jpg">
+				        	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tristique, risus non consectetur semper, lacus dolor suscipit magna, a dignissim dolor sapien eget velit. Nulla arcu tellus, gravida a sapien ac, finibus sodales lacus. Morbi elit nisi, sodales eu nisl eu, malesuada luctus justo. Donec id metus nunc. Nam eu magna a orci sollicitudin luctus eu fermentum risus. Morbi tempus, ligula et tempor aliquam, neque dui eleifend nisi, nec feugiat metus augue ac mauris. Ut auctor id felis id congue. Praesent ut eleifend lectus.Pellentesque in orci sem. Phasellus nibh nisl, interdum at dignissim ut, luctus nec nisl. Etiam consequat hendrerit porttitor. Proin ut ultricies neque. Donec vehicula sollicitudin porttitor. Sed vitae consequat nisl. Pellentesque placerat pulvinar vestibulum.Donec gravida commodo faucibus. Praesent suscipit nisi eget finibus lacinia. Ut sapien urna, venenatis in ipsum id, pharetra viverra augue. Nam egestas blandit placerat. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam suscipit pellentesque mauris, a ornare nisl rutrum sed. Maecenas lectus urna, dignissim nec lacus venenatis, fringilla ultricies lorem. Aenean maximus, sapien et bibendum rhoncus, elit massa tempor nisl, eu lobortis felis dolor ut nisl. Nam aliquam enim auctor auctor posuere. Cras volutpat ut nisi pharetra rutrum. Maecenas aliquet pharetra augue, id sodales eros fermentum congue. Pellentesque at metus blandit, auctor ligula vel, feugiat arcu. Proin nec suscipit neque.</p>
 
-					<div class="wrap row">
 
-						<div class="small-12 large-6 column">
-							
-							<a class="link7" href="<?php echo $pages->get(1023)->url;?>">Machine Installation</a>
+				        </section>
 
-						</div>
-
-					</div>
+				    </div>
 
 				</section>
 

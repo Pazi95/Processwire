@@ -11,7 +11,7 @@
 	<link rel="stylesheet" href="<?php
 	echo $config->urls->templates; ?>css/app.css">
 </head>
-	<body>
+	<body class="aboutus">
 
 		<div class="off-canvas-wrapper">
 
@@ -19,52 +19,11 @@
 
 				<div class="off-canvas position-left" id="mobile-menu" data-off-canvas>
 
-					<ul class="vertical menu" data-accordion-menu>
+					<ul class="vertical menu">
 
 						<li><a href="<?php echo $pages->get(1)->url; ?>">Home</a></li>
-						<li><a href="<?php echo $pages->get(1015)->url; ?>">What We Do</a>
-
-							<ul class="menu vertical nested">
-													
-								<li><a href="<?php echo $pages->get(1019)->url; ?>">Vehicle Maintenance & Repairs</a>
-
-									<ul class="menu vertical nested">
-
-										<li><a href="<?php echo $pages->get(1024)->url; ?>">HGV-Vehicle Maintenance</a></li>
-										<li><a href="<?php echo $pages->get(1025)->url; ?>">LGV-Vehicle Maintenance</a></li>
-										<li><a href="<?php echo $pages->get(1026)->url;?>">Bus Maintenance and Repairs</a></li>
-										<li><a href="<?php echo $pages->get(1027)->url;?>">Fleet Management</a></li>
-
-									</ul>
-
-								</li>
-								<li><a href="<?php echo $pages->get(1020)->url;?>">General Engineering</a></li>
-								<li><a href="<?php echo $pages->get(1021)->url;?>">Chassis Repairs</a></li>
-								<li><a href="<?php echo $pages->get(1022)->url;?>">Welding and Fabrication Work</a>
-
-									<ul class="menu vertical nested">
-
-										<li><a href="<?php echo $pages->get(1028)->url;?>">Steel Fabrication</a></li>
-										<li><a href="<?php echo $pages->get(1029)->url;?>">Lifting Equipment</a></li>
-
-									</ul>
-
-								</li>
-								<li><a href="<?php echo $pages->get(1023)->url;?>">Machine Installation</a></li>
-
-							</ul>
-
-						</li>			
-						<li><a href="<?php echo $pages->get(1016)->url;?>">About Us</a>
-
-							<ul class="menu vertical nested">
-
-								<li><a href="<?php echo $pages->get(1030)->url;?>">History</a></li>
-								<li><a href="<?php echo $pages->get(1031)->url;?>">Team</a></li>
-
-							</ul>
-
-						</li>
+						<li><a href="<?php echo $pages->get(1015)->url; ?>">What We Do</a></li>			
+						<li><a href="<?php echo $pages->get(1016)->url;?>">About Us</a></li>
 						<li><a href="<?php echo $pages->get(1017)->url;?>">Contact Us</a></li>
 
 					</ul>
@@ -106,53 +65,11 @@
 
 						<div class="top-bar-right">
 
-							<ul class="dropdown menu top-bar-right-menu" data-dropdown-menu>
+							<ul class="menu top-bar-right-menu">
 
 								<li><a href="<?php echo $pages->get(1)->url;?>" class="top-bar-right-menu__itemlink">Home</a></li>
-								<li><a href="<?php echo $pages->get(1015)->url;?>" class="top-bar-right-menu__itemlink--dropdown">What We Do</a>
-
-									<ul class="vertical menu" data-accordion-menu>
-
-										<li class="top-bar-right-menu__itemlink--dropdown--accordionlink"><a href="<?php echo $pages->get(1019)->url;?>">Vehicle Maintenance & Repairs</a>
-																		
-											<ul class="menu vertical nested">
-																				
-												<li><a href="<?php echo $pages->get(1024)->url;?>">HGV-Vehicle Maintenance</a></li>
-												<li><a href="<?php echo $pages->get(1025)->url;?>">LGV-Vehicle Maintenance</a></li>
-												<li><a href="<?php echo $pages->get(1026)->url;?>">Bus Maintenance and Repairs</a></li>
-												<li><a href="<?php echo $pages->get(1027)->url;?>">Fleet Management</a></li>
-
-											</ul>
-
-										</li>
-
-										<li><a href="<?php echo $pages->get(1020)->url;?>">General Engineering</a></li>
-										<li><a href="<?php echo $pages->get(1021)->url;?>">Chassis Repairs</a></li>
-										<li class="top-bar-right-menu__itemlink--dropdown--accordionlink"><a href="<?php echo $pages->get(1022)->url;?>">Welding and Fabrication Work</a>
-
-											<ul class="menu vertical nested">
-
-												<li><a href="<?php echo $pages->get(1028)->url;?>">Steel Fabrication</a></li>
-												<li><a href="<?php echo $pages->get(1029)->url;?>">Lifting Equipment</a></li>
-
-											</ul>
-
-										</li>
-										<li><a href="<?php echo $pages->get(1023)->url;?>">Machine Installation</a></li>
-
-									</ul>
-
-								</li>
-								<li><a href="<?php echo $pages->get(1016)->url;?>" class="top-bar-right-menu__itemlink--dropdown">About Us</a>
-														
-									<ul>
-																
-										<li><a href="<?php echo $pages->get(1030)->url;?>">History</a></li>
-										<li><a href="<?php echo $pages->get(1031)->url;?>">Team</a></li>
-														
-									</ul>
-												
-								</li>
+								<li><a href="<?php echo $pages->get(1015)->url;?>" class="top-bar-right-menu__itemlink--dropdown">What We Do</a></li>
+								<li><a href="<?php echo $pages->get(1016)->url;?>" class="top-bar-right-menu__itemlink--dropdown aboutus">About Us</a></li>
 								<li><a href="<?php echo $pages->get(1017)->url;?>" class="top-bar-right-menu__itemlink">Contact Us</a></li>
 
 							</ul>
@@ -164,17 +81,7 @@
 				</nav>
 
 				<!-- Hero Section -->
-				<section class="hero-other">
-
-					<div class="wrap">
-
-						<?php
-
-							echo "<h1>$page->title</h1>";
-
-						?>
-
-					</div>
+				<section class="hero">
 
 				</section>
 
@@ -185,33 +92,17 @@
 
 						<div class="small-12 large-6 column">
 
-							<h1>A paragraph about us.</h1>
+							<h3>A paragraph about us.</h3>
 							<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
 
 						</div>
 
 						<div class="small-12 large-6 column">
 									
-							<h1>An Image Here</h1>	
+							<h3>An Image Here</h3>	
 
 						</div>
 
-					</div>
-
-					<div class="wrap row">
-
-						<div class="small-12 large-6 column">
-
-							<a class="link1" href="<?php echo $pages->get(1030)->url;?>">Click Here To Learn About Our History</a>	
-
-						</div>
-
-						<div class="small-12 large-6 column">
-
-							<a class="link2" href="<?php echo $pages->get(1031)->url;?>">Click Here To Learn About Our Team</a>	
-
-						</div>
-						
 					</div>
 
 				</section>
