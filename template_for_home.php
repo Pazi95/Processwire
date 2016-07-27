@@ -34,8 +34,6 @@
 					</ul>
 
 				</div>
-
-
 		 
 				<!-- Mobile Navigation -->
 				<div class="off-canvas-content" data-off-canvas-content>
@@ -73,12 +71,13 @@
 							<ul class="menu top-bar-right-menu">
 
 								<li><a href="<?php echo $pages->get(1)->url;?>" class="top-bar-right-menu__itemlink home">Home</a></li>
-								<li><a href="<?php echo $pages->get(1015)->url;?>" class="top-bar-right-menu__itemlink--dropdown">What We Do</a>
 
+								<li><a href="<?php echo $pages->get(1015)->url;?>" class="top-bar-right-menu__itemlink--dropdown">What We Do</a>
 								</li>
-								<li><a href="<?php echo $pages->get(1016)->url;?>" class="top-bar-right-menu__itemlink--dropdown">About Us</a>
-												
+
+								<li><a href="<?php echo $pages->get(1016)->url;?>" class="top-bar-right-menu__itemlink--dropdown">About Us</a>			
 								</li>
+								
 								<li><a href="<?php echo $pages->get(1017)->url;?>" class="top-bar-right-menu__itemlinkx0">Contact Us</a></li>
 
 							</ul>
@@ -104,45 +103,45 @@
 
 							<ul class="orbit-container">
 
-							  <?php 
-							  $images = array();
-							  foreach($page->carousel_images as $image){
-								$images[] = $image->url;
-							  }
+							 	<?php 
+							  	$images = array();
+							  	foreach($page->carousel_images as $image){
+									$images[] = $image->url;
+							  	}
 							  
-							  ?>
+							  	?>
 
-							  <li class="orbit-slide is-active">
-								<?php echo "<img class='orbit-image' src='$images[0]'>"; ?>
-								<figcaption class="orbit-caption">Pic1</figcaption>
-							  </li>
+							  	<li class="orbit-slide is-active">
+									<?php echo "<img class='orbit-image' src='$images[0]'>"; ?>
+									<figcaption class="orbit-caption">Pic1</figcaption>
+							  	</li>
 
-							  <li class="orbit-slide">
-								<?php echo "<img class='orbit-image' src='$images[1]'>"; ?>
-								<figcaption class="orbit-caption">Pic2</figcaption>
-							  </li>
+							 	<li class="orbit-slide">
+									<?php echo "<img class='orbit-image' src='$images[1]'>"; ?>
+									<figcaption class="orbit-caption">Pic2</figcaption>
+							  	</li>
 
-							  <li class="orbit-slide">
-								<?php echo "<img class='orbit-image' src='$images[2]'>"; ?>
-								<figcaption class="orbit-caption">Pic3</figcaption>
-							  </li>
+							  	<li class="orbit-slide">
+									<?php echo "<img class='orbit-image' src='$images[2]'>"; ?>
+									<figcaption class="orbit-caption">Pic3</figcaption>
+							  	</li>
 
-							  <li class="orbit-slide">
-								<?php echo "<img class='orbit-image' src='$images[3]'>"; ?>
-								<figcaption class="orbit-caption">Pic4</figcaption>
-							  </li>
+							  	<li class="orbit-slide">
+									<?php echo "<img class='orbit-image' src='$images[3]'>"; ?>
+									<figcaption class="orbit-caption">Pic4</figcaption>
+							  	</li>
 
 							</ul>
 
 							<nav class="orbit-bullets">
 
-							  <button class="is-active" data-slide="0"><span class="show-for-sr">First slide details.</span><span class="show-for-sr">Current Slide</span></button>
+								<button class="is-active" data-slide="0"><span class="show-for-sr">First slide details.</span><span class="show-for-sr">Current Slide</span></button>
 
-							  <button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
+							  	<button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
 
-							  <button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
+							  	<button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
 
-							  <button data-slide="3"><span class="show-for-sr">Fourth slide details.</span></button>
+							  	<button data-slide="3"><span class="show-for-sr">Fourth slide details.</span></button>
 
 							</nav>
 						

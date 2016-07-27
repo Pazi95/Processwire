@@ -14,12 +14,16 @@
 	background-color: royalblue;
 }
 
+
+.js-off-canvas-exit{
+	background: rgba(65, 105, 225, 0.3);
+}
+
 /* ************ Nav - Mobile ************ */
 .title-bar{
 	background-color: royalblue;
 	height: 60px;
 	padding-top: 17px;
-	font-family: Tahoma;
 }
 
 #mobile-menu{
@@ -29,7 +33,6 @@
 
 #mobile-menu li{
 	list-style: none;
-	font-family: Tahoma;
 }
 
 #mobile-menu a{
@@ -44,13 +47,8 @@
 	background-color: rgba(255, 255, 255, 0.1);
 }
 
-.js-off-canvas-exit{
-	background: rgba(65, 105, 225, 0.3);
-}
-
 .top-bar-right__logo{
 	color: white;
-	font-family: Tahoma;
 	font-size:auto;
 	line-height: 30px;
 }
@@ -64,18 +62,9 @@
 	font-weight:bold;
 }
 
-.top-bar-left__logo{
-	color: white;
-	line-height: 60px;
-	font-family: Tahoma;
-	font-size: 2.5vw;
-	font-weight:bold;
-}
-
 .nav-desktop .top-bar-right-menu{
 	line-height: 60px;
 	background-color: transparent;
-	font-family: Tahoma;
 }
 
 .nav-desktop .top-bar-right-menu__itemlink{
@@ -86,6 +75,13 @@
 	color: white;
 }
 
+.top-bar-left__logo{
+	color: white;
+	line-height: 60px;
+	font-size: 2.5vw;
+	font-weight:bold;
+}
+
 .menu > li > a{
 	display: inline-block;
 	line-height: 60px;
@@ -94,35 +90,8 @@
 	color: white;
 }
 
-.nav-desktop .top-bar-right-menu__itemlink:hover, .top-bar-right-menu__itemlink--dropdown:hover{
+.nav-desktop .top-bar-right-menu__itemlink:hover{
 	background-color: rgba(255, 255, 255, 0.1);
-}
-
-.top-bar-right-menu__itemlink--dropdown{
-	font-family: Tahoma;	
-}
-
-.top-bar-right-menu > li > ul{
-	list-style-type: none;
-	background-color: royalblue;
-}
-
-.top-bar-right-menu > li > ul > li > a{
-	color: white;
-	display: block;
-	height: auto;
-	line-height: 50px;
-	text-align: center;
-	width: 300px;
-}
-
-.linkss > li{
-	display: block;
-}
-
-.linkss > li > a{
-	background-color: royalblue;
-	color: white;
 }
 
 body.home a.home, body.aboutus a.aboutus, body.contactus a.contactus, body.whatwedo a.whatwedo{
@@ -143,19 +112,10 @@ body.home a.home:hover, body.aboutus a.aboutus:hover, body.contactus a.contactus
 	height: auto;
 }
 
-/*main page carousel*/
-.orbit-container{
-	height:100% !important;
-}
 
 .hero .wrap{
 	width:90%;
 	height: auto;
-}
-
-/*main page carousel*/
-.hero .orbit-container{
-	width:100%;
 }
 
 .hero h1,
@@ -175,9 +135,13 @@ body.home a.home:hover, body.aboutus a.aboutus:hover, body.contactus a.contactus
 	font-weight: bold;
 }
 
-.other-page-links{
-	display:inline-block;
-	padding-right:10px;
+/*main page carousel*/
+.orbit-container{
+	height:100% !important;
+}
+
+.hero .orbit-container{
+	width:100%;
 }
 
 /* ************ Main Section ************ */
@@ -196,13 +160,14 @@ body.home a.home:hover, body.aboutus a.aboutus:hover, body.contactus a.contactus
 	float:left;
 }
 
+.main h3{
+	width: auto;
+}
+
+/* What we do page*/
 .sectionfour{
 	padding: 0 0;
 	padding-bottom:10px;
-}
-
-.main h3{
-	width: auto;
 }
 
 /* ************ Magellan ************ */ 
@@ -232,36 +197,9 @@ sticky_menu li > a:focus{
 	margin-top:70px;
 }
 
-/* ***** Menu Square Stylings ***** */
-
-.main a{
-	height:auto;
-	width:auto;
-	display:block;
-	text-align:center;
-	background-repeat: no-repeat;
-	padding:20px 0;
-	font-size:2vw;
-	font-weight:bold;
-	color:black;
-}
-
-.main a:hover{
-	opacity:0.6;
-	color:red;
-}
-
 /* Contact Us Page */
-
-
 .main-contacts{
 	padding: 20px 0px;
-}
-
-.main-contacts p{
-	outline: solid royalblue thin;
-	text-align: center;
-	line-height:450px;
 }
 
 .main-contacts a{
@@ -326,14 +264,12 @@ footer a {
 	display: block;
 	color: white;
 	font-size: 0.9em;
-	font-family: Tahoma;
 	width: auto;
 }
 
 footer li{
 	color:white;
 	font-size:1.05em;
-	font-family: Tahoma;
 	list-style-type:circle;
 }
 

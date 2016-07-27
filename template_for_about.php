@@ -1,17 +1,24 @@
 <!doctype html>
+
 <html class="no-js" lang="en" dir="ltr">
+
 <head>
+
 	<meta charset="utf-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title><?php
-		echo $page->title; ?></title>
+
+	<title><?php echo $page->title; ?></title>
 	<link rel="stylesheet" href="<?php
 	echo $config->urls->templates; ?>css/foundation.css">
+
 	<link rel="stylesheet" href="<?php
 	echo $config->urls->templates; ?>css/app.css">
+
 	<link rel="stylesheet" href="<?php echo $config->urls->templates; ?>foundation-icons/foundation-icons.css">
+
 </head>
+
 	<body class="aboutus">
 
 		<div class="off-canvas-wrapper">
@@ -144,46 +151,46 @@
 
 								<ul class="orbit-container">
 
-								  	<?php 
+									<?php 
 
-								 		$images = array();
-								  		foreach($page->carousel_images as $image){
+										$images = array();
+										foreach($page->carousel_images as $image){
 											$images[] = $image->url;
-								  		}
+										}
 								  
-								  	?>
+									?>
 
-							  		<li class="orbit-slide is-active">
+									<li class="orbit-slide is-active">
 										<?php echo "<img class='orbit-image' src='$images[0]'>"; ?>
 										<figcaption class="orbit-caption">Pic1</figcaption>
-							  		</li>
+									</li>
 
-							  		<li class="orbit-slide">
+									<li class="orbit-slide">
 										<?php echo "<img class='orbit-image' src='$images[1]'>"; ?>
 										<figcaption class="orbit-caption">Pic2</figcaption>
-							  		</li>
+									</li>
 
-							  		<li class="orbit-slide">
+									<li class="orbit-slide">
 										<?php echo "<img class='orbit-image' src='$images[2]'>"; ?>
 										<figcaption class="orbit-caption">Pic3</figcaption>
-							  		</li>
+									</li>
 
-							  		<li class="orbit-slide">
+									<li class="orbit-slide">
 										<?php echo "<img class='orbit-image' src='$images[3]'>"; ?>
 										<figcaption class="orbit-caption">Pic4</figcaption>
-							  		</li>
+									</li>
 
 								</ul>
 
 								<nav class="orbit-bullets">
 
-							  		<button class="is-active" data-slide="0"><span class="show-for-sr">First slide details.</span><span class="show-for-sr">Current Slide</span></button>
+									<button class="is-active" data-slide="0"><span class="show-for-sr">First slide details.</span><span class="show-for-sr">Current Slide</span></button>
 
-							  		<button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
+									<button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
 
-							  		<button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
+									<button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
 
-							  		<button data-slide="3"><span class="show-for-sr">Fourth slide details.</span></button>
+									<button data-slide="3"><span class="show-for-sr">Fourth slide details.</span></button>
 
 								</nav>
 						

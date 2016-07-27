@@ -9,11 +9,15 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<title><?php echo $page->title; ?></title>
+
 	<link rel="stylesheet" href="<?php echo $config->urls->templates; ?>css/foundation.css">
 	<link rel="stylesheet" href="<?php echo $config->urls->templates; ?>css/app.css">
 	<link rel="stylesheet" href="<?php echo $config->urls->templates; ?>foundation-icons/foundation-icons.css">
+
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAfleDtpQf4QFVnZ6pcuW8yDFvKFbIqfrE&callback=initMap"></script>
+
 	<script>
+
 	var myCenter=new google.maps.LatLng(53.995216,-6.413037000000031);
 	function initialize(){
 
@@ -106,11 +110,6 @@
 					</div>
 
 				</nav>
-
-				<!-- Hero Section -->
-				<section class="hero-other">
-
-				</section>
 
 				<!-- Main Section -->
 				<section class="main-contacts">
