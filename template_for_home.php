@@ -40,7 +40,7 @@
 				<!-- Mobile Navigation -->
 				<div class="off-canvas-content" data-off-canvas-content>
 
-					<div class="title-bar show-for-small-only">
+					<div class="title-bar hide-for-large">
 
 						<div class="title-bar-left">
 
@@ -157,7 +157,7 @@
 
 					<div class="wrap row">
 
-						<div class="small-12 medium-7 column">
+						<div class="small-12 medium-12 column">
 
 						<h1>Brief Description</h1>
 						<hr>
@@ -165,7 +165,7 @@
 							
 						</div>
 
-						<div class="small-12 medium-5 column">
+						<div class="small-12 medium-12 column">
 
 						</div>
 

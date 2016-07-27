@@ -37,7 +37,7 @@
 				<!-- Mobile Navigation -->
 				<div class="off-canvas-content" data-off-canvas-content>
 
-					<div class="title-bar show-for-small-only">
+					<div class="title-bar hide-for-large">
 
 						<div class="title-bar-left">
 
@@ -89,23 +89,23 @@
 
 				<!-- Sticky Nav -->
 
-				<div data-sticky-container>
+				<div class="sticky_container" data-sticky-container>
 
 				  <div class="sticky show-for-large" id="example" data-sticky data-margin-top="0" style="width:100%;" data-top-anchor="stickhere">
 
-				    <nav data-magellan data-bar-offset="37" class="sticky_menu">
+					<nav data-magellan data-bar-offset="37" class="sticky_menu">
 
-				      <ul id="stickhere" class="horizontal menu expanded">
+					  <ul id="stickhere" class="horizontal menu expanded">
 
-				      	<li><a href="#first">Vehicle Maintenance & Repairs</a></li>
-				      	<li><a href="#second">General Engineering</a></li>
-				      	<li><a href="#third">Chassis Repairs</a></li>
-				      	<li><a href="#fourth">Welding & Fabrication Work</a></li>
-				      	<li><a href="#fifth">Machine Installation</a></li>
-				      
-				      </ul>
-				    
-				    </nav>
+						<li><a href="#first">Vehicle Maintenance</a></li>
+						<li><a href="#second">General Engineering</a></li>
+						<li><a href="#third">Chassis Repairs</a></li>
+						<li><a href="#fourth">Welding</a></li>
+						<li><a href="#fifth">Machine Installation</a></li>
+					  
+					  </ul>
+					
+					</nav>
 				  
 				  </div>
 				
@@ -115,54 +115,81 @@
 
 				<section class="main wrap">
 
+					<?php 
+
+						$images = array();
+						foreach($page->images as $image){
+							$images[] = $image->url;
+						}
+							  
+					?>
+
 					<div class="sections">
 
-				        <section id="first">
-				        	
-				        	<h2>Vehicle Maintenance and Repairs</h2>
-				        	<img src="http://images.hgmsites.net/med/car-repair_100311664_m.jpg">
-				        	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tristique, risus non consectetur semper, lacus dolor suscipit magna, a dignissim dolor sapien eget velit. Nulla arcu tellus, gravida a sapien ac, finibus sodales lacus. Morbi elit nisi, sodales eu nisl eu, malesuada luctus justo. Donec id metus nunc. Nam eu magna a orci sollicitudin luctus eu fermentum risus. Morbi tempus, ligula et tempor aliquam, neque dui eleifend nisi, nec feugiat metus augue ac mauris. Ut auctor id felis id congue. Praesent ut eleifend lectus.Pellentesque in orci sem. Phasellus nibh nisl, interdum at dignissim ut, luctus nec nisl. Etiam consequat hendrerit porttitor. Proin ut ultricies neque. Donec vehicula sollicitudin porttitor. Sed vitae consequat nisl. Pellentesque placerat pulvinar vestibulum.Donec gravida commodo faucibus. Praesent suscipit nisi eget finibus lacinia. Ut sapien urna, venenatis in ipsum id, pharetra viverra augue. Nam egestas blandit placerat. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam suscipit pellentesque mauris, a ornare nisl rutrum sed. Maecenas lectus urna, dignissim nec lacus venenatis, fringilla ultricies lorem. Aenean maximus, sapien et bibendum rhoncus, elit massa tempor nisl, eu lobortis felis dolor ut nisl. Nam aliquam enim auctor auctor posuere. Cras volutpat ut nisi pharetra rutrum. Maecenas aliquet pharetra augue, id sodales eros fermentum congue. Pellentesque at metus blandit, auctor ligula vel, feugiat arcu. Proin nec suscipit neque.</p>
+						<section id="first">
+							
+							<h2>Vehicle Maintenance and Repairs</h2>
+							<img src="">
+							<p>We carry out accident repairs and refurbishment work to buses for Dublin Bus and Bus Eireann and also maintain school bus fleet for Bus Eireann in Louth, Cavan & Monaghan.</p>
+							<p>We have a very large, well equipped workshop with 2 overhead cranes, 6 pits, a post hydraulic hoist, a brake tester, 2 forklifts, a spray booth, power wash and bus ramp for full under body and bus body wash. We have all the necessary tools and equipment to carry out all service and maintenance contracts. Our workshop has the height necessary to service all vehicles.</p>
+							<p>We operate diagnostic equipment to carry out engine/ecu diagnostic checks. We carry out ABS/ASR checks and engine re-calibrations.</p>
 
-				        </section>
+						</section>
 
-				        <section id="second">
-				        	
-				        	<h2>General Engineering</h2>
-				        	<img src="http://images.hgmsites.net/med/car-repair_100311664_m.jpg">
-				        	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tristique, risus non consectetur semper, lacus dolor suscipit magna, a dignissim dolor sapien eget velit. Nulla arcu tellus, gravida a sapien ac, finibus sodales lacus. Morbi elit nisi, sodales eu nisl eu, malesuada luctus justo. Donec id metus nunc. Nam eu magna a orci sollicitudin luctus eu fermentum risus. Morbi tempus, ligula et tempor aliquam, neque dui eleifend nisi, nec feugiat metus augue ac mauris. Ut auctor id felis id congue. Praesent ut eleifend lectus.Pellentesque in orci sem. Phasellus nibh nisl, interdum at dignissim ut, luctus nec nisl. Etiam consequat hendrerit porttitor. Proin ut ultricies neque. Donec vehicula sollicitudin porttitor. Sed vitae consequat nisl. Pellentesque placerat pulvinar vestibulum.Donec gravida commodo faucibus. Praesent suscipit nisi eget finibus lacinia. Ut sapien urna, venenatis in ipsum id, pharetra viverra augue. Nam egestas blandit placerat. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam suscipit pellentesque mauris, a ornare nisl rutrum sed. Maecenas lectus urna, dignissim nec lacus venenatis, fringilla ultricies lorem. Aenean maximus, sapien et bibendum rhoncus, elit massa tempor nisl, eu lobortis felis dolor ut nisl. Nam aliquam enim auctor auctor posuere. Cras volutpat ut nisi pharetra rutrum. Maecenas aliquet pharetra augue, id sodales eros fermentum congue. Pellentesque at metus blandit, auctor ligula vel, feugiat arcu. Proin nec suscipit neque.</p>
-
-
-				        </section>
-
-				        <section id="third">
-				        	
-				        	<h2>Chassis Repairs</h2>
-				        	<img src="http://images.hgmsites.net/med/car-repair_100311664_m.jpg">
-				        	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tristique, risus non consectetur semper, lacus dolor suscipit magna, a dignissim dolor sapien eget velit. Nulla arcu tellus, gravida a sapien ac, finibus sodales lacus. Morbi elit nisi, sodales eu nisl eu, malesuada luctus justo. Donec id metus nunc. Nam eu magna a orci sollicitudin luctus eu fermentum risus. Morbi tempus, ligula et tempor aliquam, neque dui eleifend nisi, nec feugiat metus augue ac mauris. Ut auctor id felis id congue. Praesent ut eleifend lectus.Pellentesque in orci sem. Phasellus nibh nisl, interdum at dignissim ut, luctus nec nisl. Etiam consequat hendrerit porttitor. Proin ut ultricies neque. Donec vehicula sollicitudin porttitor. Sed vitae consequat nisl. Pellentesque placerat pulvinar vestibulum.Donec gravida commodo faucibus. Praesent suscipit nisi eget finibus lacinia. Ut sapien urna, venenatis in ipsum id, pharetra viverra augue. Nam egestas blandit placerat. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam suscipit pellentesque mauris, a ornare nisl rutrum sed. Maecenas lectus urna, dignissim nec lacus venenatis, fringilla ultricies lorem. Aenean maximus, sapien et bibendum rhoncus, elit massa tempor nisl, eu lobortis felis dolor ut nisl. Nam aliquam enim auctor auctor posuere. Cras volutpat ut nisi pharetra rutrum. Maecenas aliquet pharetra augue, id sodales eros fermentum congue. Pellentesque at metus blandit, auctor ligula vel, feugiat arcu. Proin nec suscipit neque.</p>
+						<section id="second">
+							
+							<h2>General Engineering</h2>
+							<img src="">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tristique, risus non consectetur semper, lacus dolor suscipit magna, a dignissim dolor sapien eget velit. Nulla arcu tellus, gravida a sapien ac, finibus sodales lacus. Morbi elit nisi, sodales eu nisl eu, malesuada luctus justo. Donec id metus nunc. Nam eu magna a orci sollicitudin luctus eu fermentum risus. Morbi tempus, ligula et tempor aliquam, neque dui eleifend nisi, nec feugiat metus augue ac mauris. Ut auctor id felis id congue. Praesent ut eleifend lectus.Pellentesque in orci sem. Phasellus nibh nisl, interdum at dignissim ut, luctus nec nisl. Etiam consequat hendrerit porttitor. Proin ut ultricies neque. Donec vehicula sollicitudin porttitor. Sed vitae consequat nisl. Pellentesque placerat pulvinar vestibulum.Donec gravida commodo faucibus. Praesent suscipit nisi eget finibus lacinia. Ut sapien urna, venenatis in ipsum id, pharetra viverra augue. Nam egestas blandit placerat. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam suscipit pellentesque mauris, a ornare nisl rutrum sed. Maecenas lectus urna, dignissim nec lacus venenatis, fringilla ultricies lorem. Aenean maximus, sapien et bibendum rhoncus, elit massa tempor nisl, eu lobortis felis dolor ut nisl. Nam aliquam enim auctor auctor posuere. Cras volutpat ut nisi pharetra rutrum. Maecenas aliquet pharetra augue, id sodales eros fermentum congue. Pellentesque at metus blandit, auctor ligula vel, feugiat arcu. Proin nec suscipit neque.</p>
 
 
-				        </section>
+						</section>
 
-				        <section id="fourth">
-				        	
-				        	<h2>Welding and Fabrication Work</h2>
-				        	<img src="http://images.hgmsites.net/med/car-repair_100311664_m.jpg">
-				        	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tristique, risus non consectetur semper, lacus dolor suscipit magna, a dignissim dolor sapien eget velit. Nulla arcu tellus, gravida a sapien ac, finibus sodales lacus. Morbi elit nisi, sodales eu nisl eu, malesuada luctus justo. Donec id metus nunc. Nam eu magna a orci sollicitudin luctus eu fermentum risus. Morbi tempus, ligula et tempor aliquam, neque dui eleifend nisi, nec feugiat metus augue ac mauris. Ut auctor id felis id congue. Praesent ut eleifend lectus.Pellentesque in orci sem. Phasellus nibh nisl, interdum at dignissim ut, luctus nec nisl. Etiam consequat hendrerit porttitor. Proin ut ultricies neque. Donec vehicula sollicitudin porttitor. Sed vitae consequat nisl. Pellentesque placerat pulvinar vestibulum.Donec gravida commodo faucibus. Praesent suscipit nisi eget finibus lacinia. Ut sapien urna, venenatis in ipsum id, pharetra viverra augue. Nam egestas blandit placerat. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam suscipit pellentesque mauris, a ornare nisl rutrum sed. Maecenas lectus urna, dignissim nec lacus venenatis, fringilla ultricies lorem. Aenean maximus, sapien et bibendum rhoncus, elit massa tempor nisl, eu lobortis felis dolor ut nisl. Nam aliquam enim auctor auctor posuere. Cras volutpat ut nisi pharetra rutrum. Maecenas aliquet pharetra augue, id sodales eros fermentum congue. Pellentesque at metus blandit, auctor ligula vel, feugiat arcu. Proin nec suscipit neque.</p>
-
-
-				        </section>
+						<section id="third">
+							
+							<h2>Chassis Repairs</h2>
+							<img src="">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tristique, risus non consectetur semper, lacus dolor suscipit magna, a dignissim dolor sapien eget velit. Nulla arcu tellus, gravida a sapien ac, finibus sodales lacus. Morbi elit nisi, sodales eu nisl eu, malesuada luctus justo. Donec id metus nunc. Nam eu magna a orci sollicitudin luctus eu fermentum risus. Morbi tempus, ligula et tempor aliquam, neque dui eleifend nisi, nec feugiat metus augue ac mauris. Ut auctor id felis id congue. Praesent ut eleifend lectus.Pellentesque in orci sem. Phasellus nibh nisl, interdum at dignissim ut, luctus nec nisl. Etiam consequat hendrerit porttitor. Proin ut ultricies neque. Donec vehicula sollicitudin porttitor. Sed vitae consequat nisl. Pellentesque placerat pulvinar vestibulum.Donec gravida commodo faucibus. Praesent suscipit nisi eget finibus lacinia. Ut sapien urna, venenatis in ipsum id, pharetra viverra augue. Nam egestas blandit placerat. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam suscipit pellentesque mauris, a ornare nisl rutrum sed. Maecenas lectus urna, dignissim nec lacus venenatis, fringilla ultricies lorem. Aenean maximus, sapien et bibendum rhoncus, elit massa tempor nisl, eu lobortis felis dolor ut nisl. Nam aliquam enim auctor auctor posuere. Cras volutpat ut nisi pharetra rutrum. Maecenas aliquet pharetra augue, id sodales eros fermentum congue. Pellentesque at metus blandit, auctor ligula vel, feugiat arcu. Proin nec suscipit neque.</p>
 
 
-				        <section id="fifth">
-				        	
-				        	<h2>Machine Installation</h2>
-				        	<img src="http://images.hgmsites.net/med/car-repair_100311664_m.jpg">
-				        	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tristique, risus non consectetur semper, lacus dolor suscipit magna, a dignissim dolor sapien eget velit. Nulla arcu tellus, gravida a sapien ac, finibus sodales lacus. Morbi elit nisi, sodales eu nisl eu, malesuada luctus justo. Donec id metus nunc. Nam eu magna a orci sollicitudin luctus eu fermentum risus. Morbi tempus, ligula et tempor aliquam, neque dui eleifend nisi, nec feugiat metus augue ac mauris. Ut auctor id felis id congue. Praesent ut eleifend lectus.Pellentesque in orci sem. Phasellus nibh nisl, interdum at dignissim ut, luctus nec nisl. Etiam consequat hendrerit porttitor. Proin ut ultricies neque. Donec vehicula sollicitudin porttitor. Sed vitae consequat nisl. Pellentesque placerat pulvinar vestibulum.Donec gravida commodo faucibus. Praesent suscipit nisi eget finibus lacinia. Ut sapien urna, venenatis in ipsum id, pharetra viverra augue. Nam egestas blandit placerat. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam suscipit pellentesque mauris, a ornare nisl rutrum sed. Maecenas lectus urna, dignissim nec lacus venenatis, fringilla ultricies lorem. Aenean maximus, sapien et bibendum rhoncus, elit massa tempor nisl, eu lobortis felis dolor ut nisl. Nam aliquam enim auctor auctor posuere. Cras volutpat ut nisi pharetra rutrum. Maecenas aliquet pharetra augue, id sodales eros fermentum congue. Pellentesque at metus blandit, auctor ligula vel, feugiat arcu. Proin nec suscipit neque.</p>
+						</section>
+
+						<section id="fourth">
+							
+							<h2>Welding and Fabrication Work</h2>
+							<img src="">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tristique, risus non consectetur semper, lacus dolor suscipit magna, a dignissim dolor sapien eget velit. Nulla arcu tellus, gravida a sapien ac, finibus sodales lacus. Morbi elit nisi, sodales eu nisl eu, malesuada luctus justo. Donec id metus nunc. Nam eu magna a orci sollicitudin luctus eu fermentum risus. Morbi tempus, ligula et tempor aliquam, neque dui eleifend nisi, nec feugiat metus augue ac mauris. Ut auctor id felis id congue. Praesent ut eleifend lectus.Pellentesque in orci sem. Phasellus nibh nisl, interdum at dignissim ut, luctus nec nisl. Etiam consequat hendrerit porttitor. Proin ut ultricies neque. Donec vehicula sollicitudin porttitor. Sed vitae consequat nisl. Pellentesque placerat pulvinar vestibulum.Donec gravida commodo faucibus. Praesent suscipit nisi eget finibus lacinia. Ut sapien urna, venenatis in ipsum id, pharetra viverra augue. Nam egestas blandit placerat. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam suscipit pellentesque mauris, a ornare nisl rutrum sed. Maecenas lectus urna, dignissim nec lacus venenatis, fringilla ultricies lorem. Aenean maximus, sapien et bibendum rhoncus, elit massa tempor nisl, eu lobortis felis dolor ut nisl. Nam aliquam enim auctor auctor posuere. Cras volutpat ut nisi pharetra rutrum. Maecenas aliquet pharetra augue, id sodales eros fermentum congue. Pellentesque at metus blandit, auctor ligula vel, feugiat arcu. Proin nec suscipit neque.</p>
+
+							<div class="row">
+								
+								<div class="sectionfour small-12 large-6 column">
+									
+									<?php echo "<img src='$images[0]'>"; ?>
+
+								</div>
+
+								<div class="sectionfour small-12 large-6 column">
+									
+									<?php echo "<img src='$images[1]'>"; ?>
+
+								</div>
+
+							</div>
 
 
-				        </section>
+						</section>
 
-				    </div>
+
+						<section id="fifth">
+							
+							<h2>Machine Installation</h2>
+							<img src="">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tristique, risus non consectetur semper, lacus dolor suscipit magna, a dignissim dolor sapien eget velit. Nulla arcu tellus, gravida a sapien ac, finibus sodales lacus. Morbi elit nisi, sodales eu nisl eu, malesuada luctus justo. Donec id metus nunc. Nam eu magna a orci sollicitudin luctus eu fermentum risus. Morbi tempus, ligula et tempor aliquam, neque dui eleifend nisi, nec feugiat metus augue ac mauris. Ut auctor id felis id congue. Praesent ut eleifend lectus.Pellentesque in orci sem. Phasellus nibh nisl, interdum at dignissim ut, luctus nec nisl. Etiam consequat hendrerit porttitor. Proin ut ultricies neque. Donec vehicula sollicitudin porttitor. Sed vitae consequat nisl. Pellentesque placerat pulvinar vestibulum.Donec gravida commodo faucibus. Praesent suscipit nisi eget finibus lacinia. Ut sapien urna, venenatis in ipsum id, pharetra viverra augue. Nam egestas blandit placerat. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam suscipit pellentesque mauris, a ornare nisl rutrum sed. Maecenas lectus urna, dignissim nec lacus venenatis, fringilla ultricies lorem. Aenean maximus, sapien et bibendum rhoncus, elit massa tempor nisl, eu lobortis felis dolor ut nisl. Nam aliquam enim auctor auctor posuere. Cras volutpat ut nisi pharetra rutrum. Maecenas aliquet pharetra augue, id sodales eros fermentum congue. Pellentesque at metus blandit, auctor ligula vel, feugiat arcu. Proin nec suscipit neque.</p>
+
+
+						</section>
+
+					</div>
 
 				</section>
 

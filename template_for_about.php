@@ -36,7 +36,7 @@
 				<!-- Mobile Navigation -->
 				<div class="off-canvas-content" data-off-canvas-content>
 
-					<div class="title-bar show-for-small-only">
+					<div class="title-bar hide-for-large">
 
 						<div class="title-bar-left">
 
@@ -86,23 +86,111 @@
 
 				</section>
 
+				<!-- Sticky Nav -->
+
+				<div class="sticky_container" data-sticky-container>
+
+				  <div class="sticky show-for-large" id="example" data-sticky data-margin-top="0" style="width:100%;" data-top-anchor="stickhere">
+
+					<nav data-magellan data-bar-offset="37" class="sticky_menu">
+
+					  <ul id="stickhere" class="horizontal menu expanded">
+
+						<li><a href="#first">Who We Are</a></li>
+						<li><a href="#second">History</a></li>
+					  
+					  </ul>
+					
+					</nav>
+				  
+				  </div>
+				
+				</div>
+
 				<!-- Main Section -->
-				<section class="main">
+				<section class="main-about main wrap">
 
-					<div class="wrap row">
+					<?php 
 
-						<div class="small-12 large-6 column">
+						$images = array();
+						foreach($page->images as $image){
+							$images[] = $image->url;
+						}
+							  
+					?>
 
-							<h3>A paragraph about us.</h3>
-							<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+					<div class="sections sections-about">
 
-						</div>
+						<section id="first">
+								
+							<h2>Who We Are</h2>
+							<!--<img src="http://images.hgmsites.net/med/car-repair_100311664_m.jpg">-->
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tristique, risus non consectetur semper, lacus dolor suscipit magna, a dignissim dolor sapien eget velit. Nulla arcu tellus, gravida a sapien ac, finibus sodales lacus. Morbi elit nisi, sodales eu nisl eu, malesuada luctus justo. Donec id metus nunc. Nam eu magna a orci sollicitudin luctus eu fermentum risus. Morbi tempus, ligula et tempor aliquam, neque dui eleifend nisi, nec feugiat metus augue ac mauris. Ut auctor id felis id congue. Praesent ut eleifend lectus.Pellentesque in orci sem. Phasellus nibh nisl, interdum at dignissim ut, luctus nec nisl. Etiam consequat hendrerit porttitor. Proin ut ultricies neque. Donec vehicula sollicitudin porttitor. Sed vitae consequat nisl. Pellentesque placerat pulvinar vestibulum.Donec gravida commodo faucibus. Praesent suscipit nisi eget finibus lacinia. Ut sapien urna, venenatis in ipsum id, pharetra viverra augue. Nam egestas blandit placerat. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam suscipit pellentesque mauris, a ornare nisl rutrum sed. Maecenas lectus urna, dignissim nec lacus venenatis, fringilla ultricies lorem. Aenean maximus, sapien et bibendum rhoncus, elit massa tempor nisl, eu lobortis felis dolor ut nisl. Nam aliquam enim auctor auctor posuere. Cras volutpat ut nisi pharetra rutrum. Maecenas aliquet pharetra augue, id sodales eros fermentum congue. Pellentesque at metus blandit, auctor ligula vel, feugiat arcu. Proin nec suscipit neque.</p>
 
-						<div class="small-12 large-6 column">
-									
-							<h3>An Image Here</h3>	
+						</section>
 
-						</div>
+						<section id="second">
+								
+							<h2>History</h2>
+							<!--<img src="http://images.hgmsites.net/med/car-repair_100311664_m.jpg">-->
+							<p>Our company Caraher & Ward Ltd. was started in May 1986. Following the closure of C.R.V. Ltd. , which for many years was a leading manufacturer and assembler of road behicle trucks and trailers. It also serviced and maintained many of the large motor vehicle fleets in the North East Region, e.g. Eircom, ESB, Dundalk Town Council, Louth County Council, Diageo Ireland. The Company derives its name from two of the senior foremen James Caraher & Sean Ward who started the company when C.R.V. Limited closed.</p>
+							<p>We have maintained most of the personnel involved in the vehicle repair and maintenance contract work area of activity and still maintain the repair and maintenance contract with all of the above companies listed.</p>
+
+							<div class="orbit carousel_page" role="region" aria-label="CW Carousel" data-orbit>
+
+								<button class="orbit-previous"><span class="show-for-sr">Previous Slide</span> &#9664;&#xFE0E;</button>
+
+								<button class="orbit-next"><span class="show-for-sr">Next Slide</span> &#9654;&#xFE0E;</button>
+
+								<ul class="orbit-container">
+
+								  	<?php 
+
+								 		$images = array();
+								  		foreach($page->carousel_images as $image){
+											$images[] = $image->url;
+								  		}
+								  
+								  	?>
+
+							  		<li class="orbit-slide is-active">
+										<?php echo "<img class='orbit-image' src='$images[0]'>"; ?>
+										<figcaption class="orbit-caption">Pic1</figcaption>
+							  		</li>
+
+							  		<li class="orbit-slide">
+										<?php echo "<img class='orbit-image' src='$images[1]'>"; ?>
+										<figcaption class="orbit-caption">Pic2</figcaption>
+							  		</li>
+
+							  		<li class="orbit-slide">
+										<?php echo "<img class='orbit-image' src='$images[2]'>"; ?>
+										<figcaption class="orbit-caption">Pic3</figcaption>
+							  		</li>
+
+							  		<li class="orbit-slide">
+										<?php echo "<img class='orbit-image' src='$images[3]'>"; ?>
+										<figcaption class="orbit-caption">Pic4</figcaption>
+							  		</li>
+
+								</ul>
+
+								<nav class="orbit-bullets">
+
+							  		<button class="is-active" data-slide="0"><span class="show-for-sr">First slide details.</span><span class="show-for-sr">Current Slide</span></button>
+
+							  		<button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
+
+							  		<button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
+
+							  		<button data-slide="3"><span class="show-for-sr">Fourth slide details.</span></button>
+
+								</nav>
+						
+							</div>
+
+
+						</section>
 
 					</div>
 
