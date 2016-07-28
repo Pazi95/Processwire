@@ -130,14 +130,25 @@ body.home a.home:hover, body.aboutus a.aboutus:hover, body.contactus a.contactus
 	color:#3e3e3e;
 }
 
-.main img{
-	float:left;
-}
-
 .main-image{
     border: 15px solid #CCCCFF;
     border-radius: 5px;
+}
 
+.main-image-wrapper{
+	float:left;
+	position:relative;
+}
+
+.description{
+	position:absolute;
+	top:30px;
+	left:20px;
+	width:auto;
+	font-size:20px;
+	opacity:0.6;
+	color:white;
+	background-color:black;
 }
 
 .main h3{

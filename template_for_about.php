@@ -45,7 +45,7 @@ include("_header.php");
 					</div>
 
 				<!-- Desktop Navigation -->
-				<nav class="top-bar nav-desktop">
+				<nav class="top-bar nav-desktop" id="top">
 
 					<div class="wrap">
 
@@ -82,6 +82,7 @@ include("_header.php");
 
 					  <ul id="stickhere" class="horizontal menu expanded">
 
+					  	<li><a href="#top">Back To The Top</a></li>
 						<li><a href="#first">Who We Are</a></li>
 						<li><a href="#second">Gallery</a></li>
 					  

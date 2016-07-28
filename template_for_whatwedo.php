@@ -45,7 +45,7 @@ include("_header.php");
 					</div>
 
 				<!-- Desktop Navigation -->
-				<nav class="top-bar nav-desktop">
+				<nav class="top-bar nav-desktop" id="top">
 
 					<div class="wrap">
 
@@ -82,6 +82,7 @@ include("_header.php");
 
 					  <ul id="stickhere" class="horizontal menu expanded">
 
+					  	<li><a href="#top">Back To The Top</a></li>
 						<li><a href="#first">Vehicle Maintenance</a></li>
 						<li><a href="#second">General Engineering</a></li>
 						<li><a href="#third">Chassis Repairs</a></li>
@@ -135,6 +136,12 @@ include("_header.php");
 
 												echo "<img src='{$image->size(350,300)->url}' alt='{$image->description}'>";
 
+												echo "<div class='description'>";
+
+													echo "<p class='description-content'>Description</p>";
+
+												echo "</div>";
+
 											echo "</li>";
 
 										}
@@ -171,7 +178,7 @@ include("_header.php");
 								<!--<img src="">-->
 								<p>We provide material handling solutions to the brewery trade such as e.g. provision of keg stacking enclosures, keg lifting equipment and conveyor installation. Other areas of our activities include building of trailers, repair and maintenance of same.</p>
 
-							<ul class="flex-container">
+							<ul class="flex-container img">
 
 							<?php 
 

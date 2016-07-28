@@ -91,7 +91,7 @@ include("_header.php");
 
 						<h1>Welcome to the Caraher & Ward Website!</h1>
 
-						<ul class="flex-container">
+						<ul class="flex-container main-image-wrapper">
 
 						<?php 
 
@@ -104,6 +104,14 @@ include("_header.php");
 									echo "<li class='flex-item'>";
 
 										echo "<img class='main-image' src='{$image->url}' alt='{$image->description}'>";
+
+										/*
+										echo "<div class='description'>";
+
+													echo "<p class='description-content'>Description</p>";
+
+										echo "</div>";
+										*/
 
 									echo "</li>";
 
@@ -124,17 +132,6 @@ include("_header.php");
 
 					<div class="wrap row">
 
-						<div class="small-12 medium-12 column">
-
-						<h1>Brief Description</h1>
-						<hr>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-							
-						</div>
-
-						<div class="small-12 medium-12 column">
-
-						</div>
 
 					</div>
 
