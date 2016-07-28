@@ -121,6 +121,30 @@ include("_header.php");
 								<p>We have a very large, well equipped workshop with 2 overhead cranes, 6 pits, a post hydraulic hoist, a brake tester, 2 forklifts, a spray booth, power wash and bus ramp for full under body and bus body wash. We have all the necessary tools and equipment to carry out all service and maintenance contracts. Our workshop has the height necessary to service all vehicles.</p>
 								<p>We operate diagnostic equipment to carry out engine/ecu diagnostic checks. We carry out ABS/ASR checks and engine re-calibrations.</p>
 
+								<ul class="flex-container">
+
+								<?php 
+
+									$images = $page->images_2;
+
+									if (count($images) > 0) {
+
+										foreach ($images as $image) {
+
+											echo "<li class='flex-item'>";
+
+												echo "<img src='{$image->size(350,300)->url}' alt='{$image->description}'>";
+
+											echo "</li>";
+
+										}
+
+									}								  
+									
+								?>
+
+								</ul>
+
 							</section>
 
 							<section id="second">
@@ -147,21 +171,29 @@ include("_header.php");
 								<!--<img src="">-->
 								<p>We provide material handling solutions to the brewery trade such as e.g. provision of keg stacking enclosures, keg lifting equipment and conveyor installation. Other areas of our activities include building of trailers, repair and maintenance of same.</p>
 
-								<div class="row">
-									
-									<div class="sectionfour small-12 large-6 column">
-										
-										<?php echo "<img src='$images[0]'>"; ?>
+							<ul class="flex-container">
 
-									</div>
+							<?php 
 
-									<div class="sectionfour small-12 large-6 column">
-										
-										<?php echo "<img src='$images[1]'>"; ?>
+								$images = $page->images;
 
-									</div>
+								if (count($images) > 0) {
 
-								</div>
+									foreach ($images as $image) {
+
+										echo "<li class='flex-item'>";
+
+											echo "<img src='{$image->size(350,300)->url}' alt='{$image->description}'>";
+
+										echo "</li>";
+
+									}
+
+								}								  
+								
+							?>
+
+							</ul>
 
 
 							</section>

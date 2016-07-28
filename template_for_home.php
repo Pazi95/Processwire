@@ -89,7 +89,7 @@ include("_header.php");
 
 					<div class="wrap">
 
-						<h1>Welcome to the Website!</h1>
+						<h1>Welcome to the Caraher & Ward Website!</h1>
 
 						<ul class="flex-container">
 
@@ -103,7 +103,7 @@ include("_header.php");
 
 									echo "<li class='flex-item'>";
 
-										echo "<img src='{$image->size(350,300)->url}' alt='{$image->description}'>";
+										echo "<img class='main-image' src='{$image->url}' alt='{$image->description}'>";
 
 									echo "</li>";
 

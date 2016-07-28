@@ -96,21 +96,21 @@
 
 body.home a.home, body.aboutus a.aboutus, body.contactus a.contactus, body.whatwedo a.whatwedo{
 	color:#1f48c5;
-	background-color:#eee;
+	background-color:#f6f6ff;
 	font-size: 30px;
 	font-weight:bold;
 }
 
 body.home a.home:hover, body.aboutus a.aboutus:hover, body.contactus a.contactus:hover, body.whatwedo a.whatwedo:hover{
 	color:#1f48c5;
-	background-color:#eee;
+	background-color:#f6f6ff;
 }
 
 /* ************ Hero ************ */
 .hero{
 	padding:0 0;
 	height: auto;
-	background-color:#eee;
+	background-color:#f6f6ff;
 }
 
 .hero h1{
@@ -121,7 +121,7 @@ body.home a.home:hover, body.aboutus a.aboutus:hover, body.contactus a.contactus
 /* ************ Main Section ************ */
 .main{
 	padding: 0px 0px;
-	background-color:#eee;
+	background-color:#f6f6ff;
 }
 
 .main section{
@@ -132,6 +132,12 @@ body.home a.home:hover, body.aboutus a.aboutus:hover, body.contactus a.contactus
 
 .main img{
 	float:left;
+}
+
+.main-image{
+    border: 15px solid #CCCCFF;
+    border-radius: 5px;
+
 }
 
 .main h3{
@@ -147,7 +153,7 @@ s
 }
 
 .main-about{
-	background-color: #eee;
+	background-color: #f6f6ff;
 }
 
 /* What we do page*/
@@ -204,7 +210,7 @@ s
 }
 
 .sticky_menu li{
-	background-color:#eee;
+	background-color:#f6f6ff;
 	text-align:center;
 	border-bottom:solid #1f48c5;
 }
@@ -220,7 +226,7 @@ sticky_menu li > a:focus{
 /* Contact Us Page */
 .main-contacts{
 	padding: 20px 0px;
-	background-color: #eee;
+	background-color: #f6f6ff;
 }
 
 .main-contacts a{
@@ -232,7 +238,7 @@ sticky_menu li > a:focus{
 	margin-right:auto;
 	margin-left:auto;
 	width:100%;
-	height:560px;
+	height:584px;
 }
 
 .maps{
