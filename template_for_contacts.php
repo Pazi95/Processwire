@@ -99,8 +99,8 @@
 							<ul class="menu top-bar-right-menu">
 
 								<li><a href="<?php echo $pages->get(1)->url;?>" class="top-bar-right-menu__itemlink">Home</a></li>
-								<li><a href="<?php echo $pages->get(1015)->url;?>" class="top-bar-right-menu__itemlink--dropdown">What We Do</a></li>
-								<li><a href="<?php echo $pages->get(1016)->url;?>" class="top-bar-right-menu__itemlink--dropdown">About Us</a></li>
+								<li><a href="<?php echo $pages->get(1015)->url;?>" class="top-bar-right-menu__itemlink">What We Do</a></li>
+								<li><a href="<?php echo $pages->get(1016)->url;?>" class="top-bar-right-menu__itemlink">About Us</a></li>
 								<li><a href="<?php echo $pages->get(1017)->url;?>" class="top-bar-right-menu__itemlink contactus">Contact Us</a></li>
 
 							</ul>
@@ -136,6 +136,9 @@
 
 								<li><a class="contactbold"><i class="fi-map"></i>GPS Coordinates</a></li>
 								<li><a><span>Long.:53.9952184, Lat.:-6.413037400000007</span></a></li>
+
+								<li><a class="contactbold"><i class="fi-print"></i>Fax</a></li>
+								<li><a><span>042-9336784</span></a></li>
 
 							</ul>
 

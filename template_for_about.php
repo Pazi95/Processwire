@@ -76,8 +76,8 @@
 							<ul class="menu top-bar-right-menu">
 
 								<li><a href="<?php echo $pages->get(1)->url;?>" class="top-bar-right-menu__itemlink">Home</a></li>
-								<li><a href="<?php echo $pages->get(1015)->url;?>" class="top-bar-right-menu__itemlink--dropdown">What We Do</a></li>
-								<li><a href="<?php echo $pages->get(1016)->url;?>" class="top-bar-right-menu__itemlink--dropdown aboutus">About Us</a></li>
+								<li><a href="<?php echo $pages->get(1015)->url;?>" class="top-bar-right-menu__itemlink">What We Do</a></li>
+								<li><a href="<?php echo $pages->get(1016)->url;?>" class="top-bar-right-menu__itemlink aboutus">About Us</a></li>
 								<li><a href="<?php echo $pages->get(1017)->url;?>" class="top-bar-right-menu__itemlink">Contact Us</a></li>
 
 							</ul>
@@ -87,11 +87,6 @@
 					</div>
 
 				</nav>
-
-				<!-- Hero Section -->
-				<section class="hero">
-
-				</section>
 
 				<!-- Sticky Nav -->
 
@@ -143,59 +138,21 @@
 							<p>Our company Caraher & Ward Ltd. was started in May 1986. Following the closure of C.R.V. Ltd. , which for many years was a leading manufacturer and assembler of road behicle trucks and trailers. It also serviced and maintained many of the large motor vehicle fleets in the North East Region, e.g. Eircom, ESB, Dundalk Town Council, Louth County Council, Diageo Ireland. The Company derives its name from two of the senior foremen James Caraher & Sean Ward who started the company when C.R.V. Limited closed.</p>
 							<p>We have maintained most of the personnel involved in the vehicle repair and maintenance contract work area of activity and still maintain the repair and maintenance contract with all of the above companies listed.</p>
 
-							<div class="orbit carousel_page" role="region" aria-label="CW Carousel" data-orbit>
+							<div class="row">
 
-								<button class="orbit-previous"><span class="show-for-sr">Previous Slide</span> &#9664;&#xFE0E;</button>
+							<?php 
 
-								<button class="orbit-next"><span class="show-for-sr">Next Slide</span> &#9654;&#xFE0E;</button>
+								$images = $page->carousel_images;
+								if (count($images) > 0) {
+									foreach ($images as $image) {
 
-								<ul class="orbit-container">
-
-									<?php 
-
-										$images = array();
-										foreach($page->carousel_images as $image){
-											$images[] = $image->url;
-										}
-								  
-									?>
-
-									<li class="orbit-slide is-active">
-										<?php echo "<img class='orbit-image' src='$images[0]'>"; ?>
-										<figcaption class="orbit-caption">Pic1</figcaption>
-									</li>
-
-									<li class="orbit-slide">
-										<?php echo "<img class='orbit-image' src='$images[1]'>"; ?>
-										<figcaption class="orbit-caption">Pic2</figcaption>
-									</li>
-
-									<li class="orbit-slide">
-										<?php echo "<img class='orbit-image' src='$images[2]'>"; ?>
-										<figcaption class="orbit-caption">Pic3</figcaption>
-									</li>
-
-									<li class="orbit-slide">
-										<?php echo "<img class='orbit-image' src='$images[3]'>"; ?>
-										<figcaption class="orbit-caption">Pic4</figcaption>
-									</li>
-
-								</ul>
-
-								<nav class="orbit-bullets">
-
-									<button class="is-active" data-slide="0"><span class="show-for-sr">First slide details.</span><span class="show-for-sr">Current Slide</span></button>
-
-									<button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
-
-									<button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
-
-									<button data-slide="3"><span class="show-for-sr">Fourth slide details.</span></button>
-
-								</nav>
-						
+										echo "<div class='about-image small-12 large-6 column'>";
+											echo "<img src='{$image->width(468)->url}' alt='{$image->description}'>";
+										echo "</div>";
+									}
+								}								  
+							?>
 							</div>
-
 
 						</section>
 

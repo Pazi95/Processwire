@@ -64,6 +64,7 @@
 
 							<h3 class="top-bar-left__logo">Caraher & Ward Ltd.</h3>
 
+
 						</div>
 
 						<div class="top-bar-right">
@@ -72,13 +73,11 @@
 
 								<li><a href="<?php echo $pages->get(1)->url;?>" class="top-bar-right-menu__itemlink home">Home</a></li>
 
-								<li><a href="<?php echo $pages->get(1015)->url;?>" class="top-bar-right-menu__itemlink--dropdown">What We Do</a>
-								</li>
+								<li><a href="<?php echo $pages->get(1015)->url;?>" class="top-bar-right-menu__itemlink">What We Do</a></li>
 
-								<li><a href="<?php echo $pages->get(1016)->url;?>" class="top-bar-right-menu__itemlink--dropdown">About Us</a>			
-								</li>
-								
-								<li><a href="<?php echo $pages->get(1017)->url;?>" class="top-bar-right-menu__itemlinkx0">Contact Us</a></li>
+								<li><a href="<?php echo $pages->get(1016)->url;?>" class="top-bar-right-menu__itemlink">About Us</a></li>
+
+								<li><a href="<?php echo $pages->get(1017)->url;?>" class="top-bar-right-menu__itemlink">Contact Us</a></li>
 
 							</ul>
 
@@ -89,64 +88,54 @@
 				</nav>
 
 				<!-- Hero Section -->
-				<section class="hero">
 
-					<div class="wrap">
+				<?php 
 
-						<h1>Welcome to the Caraher&Ward Website!</h1>
+					$images = array();
+					foreach($page->carousel_images as $image){
+						$images[] = $image->url;
+					}
+								  
+				?>
 
-						<div class="orbit" role="region" aria-label="CW Carousel" data-orbit>
+				<section class="hero wrap">
 
-							<button class="orbit-previous"><span class="show-for-sr">Previous Slide</span> &#9664;&#xFE0E;</button>
+					<hr>
 
-							<button class="orbit-next"><span class="show-for-sr">Next Slide</span> &#9654;&#xFE0E;</button>
+					<h2>Welcome to the Caraher&Ward Website!</h2>
 
-							<ul class="orbit-container">
+					<div class="row">
 
-							 	<?php 
-							  	$images = array();
-							  	foreach($page->carousel_images as $image){
-									$images[] = $image->url;
-							  	}
-							  
-							  	?>
+						<div class="small-12 large-6 column">
 
-							  	<li class="orbit-slide is-active">
-									<?php echo "<img class='orbit-image' src='$images[0]'>"; ?>
-									<figcaption class="orbit-caption">Pic1</figcaption>
-							  	</li>
+							<?php echo "<img src='$images[0]'>"; ?>
 
-							 	<li class="orbit-slide">
-									<?php echo "<img class='orbit-image' src='$images[1]'>"; ?>
-									<figcaption class="orbit-caption">Pic2</figcaption>
-							  	</li>
-
-							  	<li class="orbit-slide">
-									<?php echo "<img class='orbit-image' src='$images[2]'>"; ?>
-									<figcaption class="orbit-caption">Pic3</figcaption>
-							  	</li>
-
-							  	<li class="orbit-slide">
-									<?php echo "<img class='orbit-image' src='$images[3]'>"; ?>
-									<figcaption class="orbit-caption">Pic4</figcaption>
-							  	</li>
-
-							</ul>
-
-							<nav class="orbit-bullets">
-
-								<button class="is-active" data-slide="0"><span class="show-for-sr">First slide details.</span><span class="show-for-sr">Current Slide</span></button>
-
-							  	<button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
-
-							  	<button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
-
-							  	<button data-slide="3"><span class="show-for-sr">Fourth slide details.</span></button>
-
-							</nav>
-						
 						</div>
 
+						<div class="small-12 large-6 column">
+
+							<?php echo "<img src='$images[1]'>"; ?>
+
+						</div>
+
+						
+					</div>
+
+
+					<div class="row">
+
+						<div class="small-12 large-6 column">
+
+							<?php echo "<img src='$images[2]'>"; ?>
+
+						</div>
+
+						<div class="small-12 large-6 column">
+
+							<?php echo "<img src='$images[3]'>"; ?>
+
+						</div>
+						
 					</div>
 
 				</section>
