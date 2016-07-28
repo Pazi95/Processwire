@@ -11,7 +11,7 @@
 }
 
 .off-canvas-wrapper{
-	background-color: royalblue;
+	background-color: #1f48c5;
 }
 
 
@@ -21,13 +21,13 @@
 
 /* ************ Nav - Mobile ************ */
 .title-bar{
-	background-color: royalblue;
+	background-color: #1f48c5;
 	height: 60px;
 	padding-top: 17px;
 }
 
 #mobile-menu{
-	background-color: royalblue;
+	background-color: #1f48c5;
 	padding: 18px;
 }
 
@@ -56,7 +56,7 @@
 
 /* ************ Nav - Desktop ************ */
 .nav-desktop{
-	background-color: royalblue;
+	background-color: #1f48c5;
 	height: 60px;
 	padding: 0px;
 	font-weight:bold;
@@ -95,43 +95,39 @@
 }
 
 body.home a.home, body.aboutus a.aboutus, body.contactus a.contactus, body.whatwedo a.whatwedo{
-	color:royalblue;
-	background-color:white;
+	color:#1f48c5;
+	background-color:#eee;
 	font-size: 30px;
 	font-weight:bold;
 }
 
 body.home a.home:hover, body.aboutus a.aboutus:hover, body.contactus a.contactus:hover, body.whatwedo a.whatwedo:hover{
-	color:royalblue;
-	background-color:white;
+	color:#1f48c5;
+	background-color:#eee;
 }
 
 /* ************ Hero ************ */
 .hero{
 	padding:0 0;
 	height: auto;
+	background-color:#eee;
 }
 
-.hero img{
-	height:400px;
-	width:500px;
-	padding-top:20px;
-}
-
-.hero h2{
-	color:royalblue;
+.hero h1{
+	color:#3e3e3e;	
+	padding-top:10px;
 }
 
 /* ************ Main Section ************ */
 .main{
 	padding: 0px 0px;
+	background-color:#eee;
 }
 
 .main section{
 	height:auto;
-	border-top: dashed royalblue 1px;
 	border-bottom:0px;
-	color:royalblue;
+	color:#3e3e3e;
 }
 
 .main img{
@@ -143,16 +139,15 @@ body.home a.home:hover, body.aboutus a.aboutus:hover, body.contactus a.contactus
 }
 
 .main h1{
-	color: royalblue;
+	color: #3e3e3e;
 }
-
+s
 .main p{
-	color:royalblue;
+	color:#3e3e3e;
 }
 
-/*About page*/
-#second .about-image:nth-child(odd){
-	clear: left;
+.main-about{
+	background-color: #eee;
 }
 
 /* What we do page*/
@@ -161,23 +156,57 @@ body.home a.home:hover, body.aboutus a.aboutus:hover, body.contactus a.contactus
 	padding-bottom:10px;
 }
 
+.sections p{
+	margin:0 0;
+}
+
+/* Flex Box */
+
+.flex-container {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  
+  -webkit-flex-flow: row wrap;
+  justify-content: center;
+}
+
+.flex-item {
+  padding: 5px;
+  width: auto;
+  height: auto;
+  margin-top: 10px;
+}
+
+.about-pics{
+	background-image: url('http://www.publicdomainpictures.net/pictures/30000/velka/cork-board.jpg');
+}
+
+
+
 /* ************ Magellan ************ */ 
 .sticky_menu li > a{
-	color:royalblue;
+	color:#1f48c5;
 	display:inline-block;
 	width:100%;
 	font-size:18px;
 }
 
 .sticky_menu li > a:hover{
-	background-color:royalblue;
+	background-color:#1f48c5;
 	color:white;
 }
 
 .sticky_menu li{
-	background-color:white;
+	background-color:#eee;
 	text-align:center;
-	border-bottom:solid royalblue;
+	border-bottom:solid #1f48c5;
 }
 
 sticky_menu li > a:focus{
@@ -186,12 +215,12 @@ sticky_menu li > a:focus{
 
 #first{
 	border-top:none;
-	margin-top:70px;
 }
 
 /* Contact Us Page */
 .main-contacts{
 	padding: 20px 0px;
+	background-color: #eee;
 }
 
 .main-contacts a{
@@ -211,8 +240,8 @@ sticky_menu li > a:focus{
 }
 
 .contactinfo{
-	text-align:center;
-	background-color:rgba(0, 0, 255, 0.8);
+	text-align:left;
+	background-color: #575757;
 	height:auto;
 }
 
@@ -227,8 +256,12 @@ sticky_menu li > a:focus{
 
 .contactinfo li{
 	list-style-type:none;
-	display:block;
 	height:auto;
+	padding-bottom:10px;
+}
+
+.contactinfo i{
+	padding-right: 10px;
 }
 
 .contactbold{
@@ -243,7 +276,7 @@ sticky_menu li > a:focus{
 
 /* ************ Footer ************ */
 footer{
-	background-color: royalblue;
+	background-color: #1f48c5;
 	padding: 40px 0px;
 }
 

@@ -1,20 +1,7 @@
-<!doctype html>
-
-<html class="no-js" lang="en">
-
-	<head>
-
-		<meta charset="utf-8">
-		<meta http-equiv="x-ua-compatible" content="ie=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-		<title><?php echo $page->title; ?></title>
-
-		<link rel="stylesheet" href="<?php echo $config->urls->templates; ?>css/foundation.css">
-		<link rel="stylesheet" href="<?php echo $config->urls->templates; ?>css/app.css">
-		<link rel="stylesheet" href="<?php echo $config->urls->templates; ?>foundation-icons/foundation-icons.css">
-
-	</head>
+<?php 
+$config->urls->templates;
+include("_header.php");
+?>
 
 	<body class="home">
 
@@ -98,44 +85,36 @@
 								  
 				?>
 
-				<section class="hero wrap">
+				<section class="hero">
 
-					<hr>
+					<div class="wrap">
 
-					<h2>Welcome to the Caraher&Ward Website!</h2>
+						<h1>Welcome to the Website!</h1>
 
-					<div class="row">
+						<ul class="flex-container">
 
-						<div class="small-12 large-6 column">
+						<?php 
 
-							<?php echo "<img src='$images[0]'>"; ?>
+							$images = $page->carousel_images;
 
-						</div>
+							if (count($images) > 0) {
 
-						<div class="small-12 large-6 column">
+								foreach ($images as $image) {
 
-							<?php echo "<img src='$images[1]'>"; ?>
+									echo "<li class='flex-item'>";
 
-						</div>
+										echo "<img src='{$image->size(350,300)->url}' alt='{$image->description}'>";
 
-						
-					</div>
+									echo "</li>";
 
+								}
 
-					<div class="row">
+							}								  
+								
+						?>
 
-						<div class="small-12 large-6 column">
+						</ul>
 
-							<?php echo "<img src='$images[2]'>"; ?>
-
-						</div>
-
-						<div class="small-12 large-6 column">
-
-							<?php echo "<img src='$images[3]'>"; ?>
-
-						</div>
-						
 					</div>
 
 				</section>
@@ -161,50 +140,7 @@
 
 				</section>
 
-				<!-- Footer -->
-				<footer>
-
-					<div class="wrap row small-up-1 medium-up-2">
-
-						<div class="column">
-
-							<h4>Contact Info</h4>
-							<hr>
-							<li><a href="tel:042-9339089"><span>Phone</span> 042-9339089</a></li>
-							<li><a href="mailto:caraherward@eircom.net"><span>Email</span> caraherward@eircom.net</a></li>
-							<li><a href="https://goo.gl/maps/CRwkAzziyLC2"><span>Address</span> CRV Buildings, Ardee Road, Dundalk, Co.Louth</a></li>
-
-						</div>
-
-						<div class="column">
-
-							<h4>Site Map</h4>
-							<hr>
-							<li><a href="<?php echo $pages->get(1)->url;?>">Home</a></li>
-							<li><a href="<?php echo $pages->get(1015)->url;?>">What We Do</a></li>
-							<li><a href="<?php echo $pages->get(1016)->url;?>">About Us</a></li>
-							<li><a href="<?php echo $pages->get(1017)->url;?>">Contact Us</a></li>
-
-						</div>
-
-					</div>
-
-				</footer>
-
-				</div>
-
-			</div>
-
-		</div>
-
-		<script src="<?php echo $config->urls->templates; ?>js/vendor/jquery.js"></script>
-		<script src="<?php echo $config->urls->templates; ?>js/vendor/what-input.js"></script>
-		<script src="<?php echo $config->urls->templates; ?>js/vendor/foundation.js"></script>
-		<script src="<?php echo $config->urls->templates; ?>js/app.js"></script>
-	
-	</body>
-
-</html>
-
-
-
+<?php 
+$config->urls->templates;
+include("_footer.php");
+?>
