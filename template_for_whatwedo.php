@@ -82,12 +82,13 @@ include("_header.php");
 
 					  <ul id="stickhere" class="horizontal menu expanded">
 
-					  	<li><a href="#top">Back To The Top</a></li>
+						<li><a href="#top">To The Top</a></li>
 						<li><a href="#first">Vehicle Maintenance</a></li>
 						<li><a href="#second">General Engineering</a></li>
 						<li><a href="#third">Chassis Repairs</a></li>
 						<li><a href="#fourth">Welding</a></li>
 						<li><a href="#fifth">Machine Installation</a></li>
+						<li><a href="#sixth">Past Projects</a></li>
 					  
 					  </ul>
 					
@@ -135,12 +136,6 @@ include("_header.php");
 											echo "<li class='flex-item'>";
 
 												echo "<img src='{$image->size(350,300)->url}' alt='{$image->description}'>";
-
-												echo "<div class='description'>";
-
-													echo "<p class='description-content'>Description</p>";
-
-												echo "</div>";
 
 											echo "</li>";
 
@@ -214,6 +209,36 @@ include("_header.php");
 
 
 							</section>
+
+							<section id="sixth">
+
+								<h2>Past Projects</h2>
+
+								<ul class="flex-container img">
+
+								<?php 
+
+									$images = $page->images_3;
+
+									if (count($images) > 0) {
+
+										foreach ($images as $image) {
+
+											echo "<li class='flex-item'>";
+
+												echo "<img src='{$image->size(350,300)->url}' alt='{$image->description}'>";
+
+											echo "</li>";
+
+										}
+
+									}								  
+									
+								?>
+
+								</ul>
+
+						</section>
 
 						</div>
 

@@ -82,10 +82,10 @@ include("_header.php");
 
 					  <ul id="stickhere" class="horizontal menu expanded">
 
-					  	<li><a href="#top">Back To The Top</a></li>
+						<li><a href="#top">To The Top</a></li>
 						<li><a href="#first">Who We Are</a></li>
 						<li><a href="#second">Gallery</a></li>
-					  
+
 					  </ul>
 					
 					</nav>
@@ -124,7 +124,11 @@ include("_header.php");
 
 										echo "<li class='flex-item'>";
 
-											echo "<img src='{$image->width(468)->url}' alt='{$image->description}'>";
+											echo "<a href='$image->url'>";
+
+												echo "<img src='{$image->width(468)->url}' alt='{$image->description}'>";
+
+											echo "</a>";
 
 										echo "</li>";
 

@@ -75,16 +75,6 @@ include("_header.php");
 				</nav>
 
 				<!-- Hero Section -->
-
-				<?php 
-
-					$images = array();
-					foreach($page->carousel_images as $image){
-						$images[] = $image->url;
-					}
-								  
-				?>
-
 				<section class="hero">
 
 					<div class="wrap">
@@ -105,19 +95,34 @@ include("_header.php");
 
 										echo "<img class='main-image' src='{$image->url}' alt='{$image->description}'>";
 
-										/*
 										echo "<div class='description'>";
 
-													echo "<p class='description-content'>Description</p>";
+													echo "<p class='description-content'>Caraher & Ward Ltd. is a vehicle repairs company, founded in 1986. The business is located in the premises formerly used by C.R.V. Ltd. , and was originally used by The Great Northern Railway.</p>";
 
 										echo "</div>";
-										*/
 
 									echo "</li>";
 
 								}
 
-							}								  
+							}
+
+
+							$images = $page->images;
+
+							if (count($images) > 0) {
+
+								foreach ($images as $image) {
+
+									echo "<li class='flex-item'>";
+
+										echo "<img class='main-image' src='{$image->width(450)->url}' alt='{$image->description}'>";
+
+									echo "</li>";
+
+								}
+
+							}									  
 								
 						?>
 
