@@ -97,7 +97,7 @@ include("_header.php");
 
 										echo "<div class='description'>";
 
-													echo "<p class='description-content'>Caraher & Ward Ltd. is a vehicle repairs company, founded in 1986. The business is located in the premises formerly used by C.R.V. Ltd. , and was originally used by The Great Northern Railway.</p>";
+													echo "<p class='description-content'>Caraher & Ward Ltd. is a vehicle repairs company, founded in 1986. The business is located in the premises formerly used by C.R.V. Ltd. , which was originally used by The Great Northern Railway.</p>";
 
 										echo "</div>";
 
@@ -135,8 +135,65 @@ include("_header.php");
 				<!-- Main Section -->
 				<section class="main">
 
-					<div class="wrap row">
+					<div class="wrap">
 
+						<h1>Services</h1>
+
+						<ul class="flex-container image-container">
+
+						<?php
+
+						$images = $page->services_images;
+
+						if (count($images) > 0) {
+
+							foreach ($images as $image) {
+
+								echo "<li class='flex-item flex-image'>";
+
+									echo "<img class='main-icons' src='{$image->size(150,150)->url}' alt='{$image->description}'>";
+
+								echo "</li>";
+
+							}
+
+						}	
+
+						?>
+
+						</ul>
+
+						<ul class="flex-container">
+
+							<?php 
+							$url = $pages->get(1015)->url;
+							$url .= "#first";  
+							?>
+
+							<li class="flex-item"><a class="button" href="<?php echo $url; ?>">Vehicle Maintenance and Repairs</a></li>
+
+							<?php 
+							$url = $pages->get(1015)->url;
+							$url .= "#second";  
+							?>
+
+							<li class="flex-item"><a class="button" href="<?php echo $url; ?>">General Engineering</a></li>
+
+							<?php 
+							$url = $pages->get(1015)->url;
+							$url .= "#third";  
+							?>
+
+							<li class="flex-item"><a class="button" href="<?php echo $url; ?>">Welding and Fabrication Work</a></li>
+
+							<?php 
+							$url = $pages->get(1015)->url;
+							$url .= "#fourth";  
+							?>
+
+							<li class="flex-item"><a class="button" href="<?php echo $url; ?>">Machine Installation</a></li>
+						
+						</ul>
 
 					</div>
 
