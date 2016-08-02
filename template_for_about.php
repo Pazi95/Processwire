@@ -34,8 +34,7 @@ include("_header.php");
 								
 							<h2>Who We Are & Our History</h2>
 							<!--<img src="http://images.hgmsites.net/med/car-repair_100311664_m.jpg">-->
-							<p>Our company Caraher & Ward Ltd. was started in May 1986. Following the closure of C.R.V. Ltd. , which for many years was a leading manufacturer and assembler of road vehicle trucks and trailers. It also serviced and maintained many of the large motor vehicle fleets in the North East Region, e.g. Eircom, ESB, Dundalk Town Council, Louth County Council, Diageo Ireland. The Company derives its name from two of the senior foremen James Caraher & Sean Ward who started the company when C.R.V. Limited closed.</p>
-							<p>We have maintained most of the personnel involved in the vehicle repair and maintenance contract work area of activity and still maintain the repair and maintenance contract with all of the above companies listed.</p>
+							<p><?php echo $page->about_section; ?></p>
 
 						</section>
 

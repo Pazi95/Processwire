@@ -15,10 +15,9 @@ include("_header.php");
 
 						<li><a href="#top">To The Top</a></li>
 						<li><a href="#first">Vehicle Maintenance</a></li>
-						<li><a href="#second">General Engineering</a></li>
-						<li><a href="#third">Welding</a></li>
-						<li><a href="#fourth">Machine Installation</a></li>
-						<li><a href="#fifth">Past Projects</a></li>
+						<li><a href="#second">Welding</a></li>
+						<li><a href="#third">Machine Installation</a></li>
+						<li><a href="#fourth">Past Projects</a></li>
 					  
 					  </ul>
 					
@@ -79,15 +78,6 @@ include("_header.php");
 
 							<section id="second">
 								
-								<h2>General Engineering</h2>
-								<!--<img src="">-->
-								<p><?php echo $page->what_section2; ?></p>
-
-
-							</section>
-
-							<section id="third">
-								
 								<h2>Welding and Fabrication Work</h2>
 								<!--<img src="">-->
 								<p><?php echo $page->what_section3; ?></p>
@@ -124,7 +114,7 @@ include("_header.php");
 							</section>
 
 
-							<section id="fourth">
+							<section id="third">
 								
 								<h2>Machine Installation</h2>
 								<!--<img src="">-->
@@ -133,7 +123,7 @@ include("_header.php");
 
 							</section>
 
-							<section id="fifth">
+							<section id="fourth">
 
 								<h2>Past Projects</h2>
 

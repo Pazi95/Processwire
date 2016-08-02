@@ -106,18 +106,11 @@ include("_header.php");
 							$url .= "#second";  
 							?>
 
-							<li class="flex-item icon-item"><a class="button" href="<?php echo $url; ?>">General Engineering</a></li>
-
-							<?php 
-							$url = $pages->get(1015)->url;
-							$url .= "#third";  
-							?>
-
 							<li class="flex-item icon-item"><a class="button" href="<?php echo $url; ?>">Welding and Fabrication Work</a></li>
 
 							<?php 
 							$url = $pages->get(1015)->url;
-							$url .= "#fourth";  
+							$url .= "#third";
 							?>
 
 							<li class="flex-item icon-item"><a class="button" href="<?php echo $url; ?>">Machine Installation</a></li>
@@ -129,7 +122,6 @@ include("_header.php");
 
 							<li><p>Credits</p></li>
 							<li><p><span>Wrench Icon:</span> made by <a href="http://www.flaticon.com/authors/gregor-cresnar">Gregor Cresnar</a> from <a href="http://www.flaticon.com">www.flaticon.com</a></p></li>
-							<li><p><span>Gear Icon:</span> made by <a href="http://www.flaticon.com/authors/egor-rumyantsev">Egor Rumyantsev</a> from <a href="http://www.flaticon.com">www.flaticon.com</a></p></li>
 							<li><p><span>Welding Mask Icon:</span> made by <a href="http://www.flaticon.com/authors/freepik">Freepik</a> from <a href="http://www.flaticon.com">www.flaticon.com</a></p></li>
 							<li><p><span>Drill Icon:</span> made by <a href="http://www.flaticon.com/authors/freepik">Freepik</a> from <a href="http://www.flaticon.com">www.flaticon.com</a></p></li>
 

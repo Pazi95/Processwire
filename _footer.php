@@ -9,6 +9,7 @@
 							<li><a href="tel:042-9339089"><span>Phone</span> 042-9339089</a></li>
 							<li><a href="mailto:caraherward@eircom.net"><span>Email</span> caraherward@eircom.net</a></li>
 							<li><a href="https://goo.gl/maps/CRwkAzziyLC2"><span>Address</span> CRV Buildings, Ardee Road, Dundalk, Co.Louth</a></li>
+							<li><a href="fax:042-9339089"><span>Fax</span> 042-9336784</a></li>
 
 						</div>
 
