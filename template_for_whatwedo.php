@@ -94,7 +94,7 @@ include("_header.php");
 								<!--<img src="">-->
 								<p>We provide material handling solutions to the brewery trade such as e.g. provision of keg stacking enclosures, keg lifting equipment and conveyor installation. Other areas of our activities include building of trailers, repair and maintenance of same.</p>
 
-							<ul class="flex-container img">
+							<ul class="flex-container">
 
 							<?php 
 
@@ -118,6 +118,10 @@ include("_header.php");
 
 							</ul>
 
+							<div class="flex-video">
+								<iframe src="https://www.youtube.com/embed/9IJ7lZM2Dw0" frameborder="0" allowfullscreen></iframe>
+							</div>
+
 
 							</section>
 
@@ -135,7 +139,7 @@ include("_header.php");
 
 								<h2>Past Projects</h2>
 
-								<ul class="flex-container img">
+								<ul class="flex-container">
 
 								<?php 
 
@@ -145,9 +149,15 @@ include("_header.php");
 
 										foreach ($images as $image) {
 
-											echo "<li class='flex-item'>";
+											echo "<li class='flex-item projects_wrapper'>";
 
 												echo "<img src='{$image->url}' alt='{$image->description}'>";
+
+												echo "<div class='project_description'>";
+
+													echo "<p>$image->description</p>";
+
+												echo "</div>";
 
 											echo "</li>";
 
@@ -160,6 +170,7 @@ include("_header.php");
 								</ul>
 
 						</section>
+
 
 						</div>
 

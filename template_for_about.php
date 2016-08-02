@@ -53,11 +53,17 @@ include("_header.php");
 
 									foreach ($images as $image) {
 
-										echo "<li class='flex-item'>";
+										echo "<li class='flex-item about_wrapper'>";
 
 											echo "<a href='$image->url'>";
 
 												echo "<img src='{$image->width(468)->url}' alt='{$image->description}'>";
+
+												echo "<div class='about_description'>";
+
+													echo "<p>$image->description</p>";
+
+												echo "</div>";
 
 											echo "</a>";
 
