@@ -1,5 +1,13 @@
 <!doctype html>
 
+<?php
+
+$root = $pages->get("/");
+$children = $root->children();
+$children->prepend($root);
+
+?>
+
 <html class="no-js" lang="en" dir="ltr">
 
 	<head>
@@ -41,3 +49,60 @@
 	</script>
 
 	</head>
+
+	<body>
+
+		<div class="off-canvas-wrapper">
+
+			<div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+
+				<div class="off-canvas position-left" id="mobile-menu" data-off-canvas>
+
+					<?php
+
+        				renderNavMobile($children);
+
+        			?>
+
+				</div>
+		 
+				<!-- Mobile Navigation -->
+				<div class="off-canvas-content" data-off-canvas-content>
+
+					<div class="title-bar hide-for-large">
+
+						<div class="title-bar-left">
+
+							<button class="menu-icon" type="button" data-toggle="mobile-menu"></button>
+							<span class="title-bar-title">MENU</span>
+
+						</div>
+
+						<div class="title-bar-right">
+
+							<h3 class="top-bar-right__logo">Caraher & Ward Ltd.</h3>
+
+						</div>
+
+					</div>
+
+				<!-- Desktop Navigation -->
+				<nav class="top-bar nav-desktop data-topbar" role="navigation">
+
+					<div class="wrap">
+
+						<div class="top-bar-left">
+
+							<h3 class="top-bar-left__logo">Caraher & Ward Ltd. <span>since 1986</span></h3>
+
+						</div>
+
+						<?php
+
+        					renderNav($children);
+
+        				?>
+
+					</div>
+
+				</nav>

@@ -3,83 +3,12 @@ $config->urls->templates;
 include("_header.php");
 ?>
 
-	<body class="home">
-
-		<div class="off-canvas-wrapper">
-
-			<div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
-
-				<div class="off-canvas position-left" id="mobile-menu" data-off-canvas>
-
-					<ul class="vertical menu">
-
-						<li><a href="<?php echo $pages->get(1)->url; ?>">Home</a></li>
-						<li><a href="<?php echo $pages->get(1015)->url; ?>">What We Do</a></li>			
-						<li><a href="<?php echo $pages->get(1016)->url;?>">About Us</a></li>
-						<li><a href="<?php echo $pages->get(1017)->url;?>">Contact Us</a></li>
-
-					</ul>
-
-				</div>
-		 
-				<!-- Mobile Navigation -->
-				<div class="off-canvas-content" data-off-canvas-content>
-
-					<div class="title-bar hide-for-large">
-
-						<div class="title-bar-left">
-
-							<button class="menu-icon" type="button" data-toggle="mobile-menu"></button>
-							<span class="title-bar-title">MENU</span>
-
-						</div>
-
-						<div class="title-bar-right">
-
-							<h3 class="top-bar-right__logo">Caraher & Ward Ltd.</h3>
-
-						</div>
-
-					</div>
-
-				<!-- Desktop Navigation -->
-				<nav class="top-bar nav-desktop data-topbar" role="navigation">
-
-					<div class="wrap">
-
-						<div class="top-bar-left">
-
-							<h3 class="top-bar-left__logo">Caraher & Ward Ltd.</h3>
-
-
-						</div>
-
-						<div class="top-bar-right">
-
-							<ul class="menu top-bar-right-menu">
-
-								<li><a href="<?php echo $pages->get(1)->url;?>" class="top-bar-right-menu__itemlink home">Home</a></li>
-
-								<li><a href="<?php echo $pages->get(1015)->url;?>" class="top-bar-right-menu__itemlink">What We Do</a></li>
-
-								<li><a href="<?php echo $pages->get(1016)->url;?>" class="top-bar-right-menu__itemlink">About Us</a></li>
-
-								<li><a href="<?php echo $pages->get(1017)->url;?>" class="top-bar-right-menu__itemlink">Contact Us</a></li>
-
-							</ul>
-
-						</div>
-
-					</div>
-
-				</nav>
-
 				<!-- Hero Section -->
 				<section class="hero">
 
 					<div class="wrap">
 
-						<h1>Welcome to the Caraher & Ward Website!</h1>
+						<h1>Welcome to the Caraher & Ward Ltd. Website!</h1>
 
 						<ul class="flex-container main-image-wrapper">
 
@@ -170,29 +99,40 @@ include("_header.php");
 							$url .= "#first";  
 							?>
 
-							<li class="flex-item"><a class="button" href="<?php echo $url; ?>">Vehicle Maintenance and Repairs</a></li>
+							<li class="flex-item icon-item"><a class="button" href="<?php echo $url; ?>">Vehicle Maintenance and Repairs</a></li>
 
 							<?php 
 							$url = $pages->get(1015)->url;
 							$url .= "#second";  
 							?>
 
-							<li class="flex-item"><a class="button" href="<?php echo $url; ?>">General Engineering</a></li>
+							<li class="flex-item icon-item"><a class="button" href="<?php echo $url; ?>">General Engineering</a></li>
 
 							<?php 
 							$url = $pages->get(1015)->url;
 							$url .= "#third";  
 							?>
 
-							<li class="flex-item"><a class="button" href="<?php echo $url; ?>">Welding and Fabrication Work</a></li>
+							<li class="flex-item icon-item"><a class="button" href="<?php echo $url; ?>">Welding and Fabrication Work</a></li>
 
 							<?php 
 							$url = $pages->get(1015)->url;
 							$url .= "#fourth";  
 							?>
 
-							<li class="flex-item"><a class="button" href="<?php echo $url; ?>">Machine Installation</a></li>
+							<li class="flex-item icon-item"><a class="button" href="<?php echo $url; ?>">Machine Installation</a></li>
 						
+						</ul>
+
+
+						<ul class="credits">
+
+							<li><p>Credits</p></li>
+							<li><p><span>Wrench Icon:</span> made by <a href="http://www.flaticon.com/authors/gregor-cresnar">Gregor Cresnar</a> from <a href="http://www.flaticon.com">www.flaticon.com</a></p></li>
+							<li><p><span>Gear Icon:</span> made by <a href="http://www.flaticon.com/authors/egor-rumyantsev">Egor Rumyantsev</a> from <a href="http://www.flaticon.com">www.flaticon.com</a></p></li>
+							<li><p><span>Welding Mask Icon:</span> made by <a href="http://www.flaticon.com/authors/freepik">Freepik</a> from <a href="http://www.flaticon.com">www.flaticon.com</a></p></li>
+							<li><p><span>Drill Icon:</span> made by <a href="http://www.flaticon.com/authors/freepik">Freepik</a> from <a href="http://www.flaticon.com">www.flaticon.com</a></p></li>
+
 						</ul>
 
 					</div>

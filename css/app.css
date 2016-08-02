@@ -2,6 +2,7 @@
 *{
 	outline: none;
 	font-family:Tahoma;
+	list-style-type: none;
 }
 
 .wrap{
@@ -53,6 +54,14 @@
 	line-height: 30px;
 }
 
+.credits span{
+	font-weight: bold;
+}
+
+.credits p{
+	font-size: 13px;
+}
+
 
 /* ************ Nav - Desktop ************ */
 .nav-desktop{
@@ -82,6 +91,11 @@
 	font-weight:bold;
 }
 
+.top-bar-left__logo span{
+	padding-left: 15px;
+	font-size: 1.5vw;
+}
+
 .menu > li > a{
 	display: inline-block;
 	line-height: 60px;
@@ -94,16 +108,21 @@
 	background-color: rgba(255, 255, 255, 0.1);
 }
 
-body.home a.home, body.aboutus a.aboutus, body.contactus a.contactus, body.whatwedo a.whatwedo{
-	color:#1f48c5;
+.current{
 	background-color:#f6f6ff;
 	font-size: 30px;
-	font-weight:bold;
 }
 
-body.home a.home:hover, body.aboutus a.aboutus:hover, body.contactus a.contactus:hover, body.whatwedo a.whatwedo:hover{
-	color:#1f48c5;
+.current a{
+	color:#1f48c5 !important;
+}
+
+.current:hover{
 	background-color:#f6f6ff;
+}
+
+.current a:hover{
+	color:#1f48c5;
 }
 
 /* ************ Hero ************ */
@@ -115,7 +134,7 @@ body.home a.home:hover, body.aboutus a.aboutus:hover, body.contactus a.contactus
 
 .hero h1{
 	color:#3e3e3e;	
-	padding-top:10px;
+	padding-top:20px;
 	margin-bottom: 0px;
 }
 
@@ -198,7 +217,7 @@ body.home a.home:hover, body.aboutus a.aboutus:hover, body.contactus a.contactus
   display: flex;
   
   -webkit-flex-flow: row wrap;
-  justify-content: center;
+  justify-content: space-around;
 }
 
 .flex-item {
@@ -208,12 +227,18 @@ body.home a.home:hover, body.aboutus a.aboutus:hover, body.contactus a.contactus
   margin-top: 10px;
 }
 
+
+.icon-item{
+	width: 150px;
+}
+
+
 .main .flex-container{
 	justify-content: space-around;
 }
 
 .flex-container a{
-	color:#3e3e3e;
+	color:black;
 }
 
 .about-pics{
@@ -231,7 +256,7 @@ body.home a.home:hover, body.aboutus a.aboutus:hover, body.contactus a.contactus
 	color:#1f48c5;
 	display:inline-block;
 	width:100%;
-	font-size:18px;
+	font-size:auto;
 }
 
 .sticky_menu li > a:hover{
@@ -296,7 +321,6 @@ a.button{
 }
 
 .contactinfo li{
-	list-style-type:none;
 	height:auto;
 	padding-bottom:10px;
 }
