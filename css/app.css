@@ -277,6 +277,8 @@
 
 .about-pics{
 	background-image: url('http://www.publicdomainpictures.net/pictures/30000/velka/cork-board.jpg');
+	padding-bottom: 30px;
+	margin-bottom: 5px;
 }
 
 .about-pics a:hover{

@@ -8,7 +8,7 @@ include("_header.php");
 
 					<div class="wrap">
 
-						<h1>Welcome to the Caraher & Ward Ltd. Website!</h1>
+						<h1><?php echo $page->welcome_message; ?></h1>
 
 						<ul class="flex-container main-image-wrapper">
 
@@ -26,7 +26,7 @@ include("_header.php");
 
 										echo "<div class='description'>";
 
-													echo "<p class='description-content'>Caraher & Ward Ltd. is a vehicle repairs company, founded in 1986. The business is located in the premises formerly used by C.R.V. Ltd. , which was originally used by The Great Northern Railway.</p>";
+													echo "<p class='description-content'>$image->description</p>";
 
 										echo "</div>";
 
