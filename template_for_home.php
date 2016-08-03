@@ -45,7 +45,11 @@ include("_header.php");
 
 									echo "<li class='flex-item'>";
 
-										echo "<img class='main-image' src='{$image->width(450)->url}' alt='{$image->description}'>";
+										echo "<a href='$image->url'>";
+
+											echo "<img class='main-image' src='{$image->width(450)->url}' alt='{$image->description}'>";
+
+										echo "</a>";
 
 									echo "</li>";
 

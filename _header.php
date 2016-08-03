@@ -84,7 +84,7 @@ $children->prepend($root);
 
 						<div class="title-bar-right">
 
-							<h3 class="top-bar-right__logo">Caraher & Ward Ltd. <span>since 1986</span></h3>
+							<h3 class="top-bar-right__logo">Caraher & Ward Ltd. <span>established 1986</span></h3>
 
 						</div>
 
@@ -97,7 +97,7 @@ $children->prepend($root);
 
 						<div class="top-bar-left">
 
-							<h3 class="top-bar-left__logo">Caraher & Ward Ltd. <span>since 1986</span></h3>
+							<h3 class="top-bar-left__logo">Caraher & Ward Ltd. <span>established 1986</span></h3>
 
 						</div>
 

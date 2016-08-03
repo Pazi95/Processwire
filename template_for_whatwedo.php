@@ -46,7 +46,7 @@ include("_header.php");
 
 							<section id="first">
 								
-								<h2>Vehicle Maintenance and Repairs</h2>
+								<h2><?php echo $page->what_title1; ?></h2>
 								<!--<img src="">-->
 								<p><?php echo $page->what_section1; ?></p>
 
@@ -62,7 +62,11 @@ include("_header.php");
 
 											echo "<li class='flex-item'>";
 
-												echo "<img src='{$image->size(350,300)->url}' alt='{$image->description}'>";
+												echo "<a href='$image->url'>";
+
+													echo "<img src='{$image->size(350,300)->url}' alt='{$image->description}'>";
+
+												echo "</a>";
 
 											echo "</li>";
 
@@ -78,7 +82,7 @@ include("_header.php");
 
 							<section id="second">
 								
-								<h2>Welding and Fabrication Work</h2>
+								<h2><?php echo $page->what_title2; ?></h2>
 								<!--<img src="">-->
 								<p><?php echo $page->what_section3; ?></p>
 
@@ -94,7 +98,11 @@ include("_header.php");
 
 										echo "<li class='flex-item'>";
 
-											echo "<img src='{$image->size(350,300)->url}' alt='{$image->description}'>";
+											echo "<a href='$image->url'>";
+
+												echo "<img src='{$image->size(350,300)->url}' alt='{$image->description}'>";
+
+											echo "</a>";
 
 										echo "</li>";
 
@@ -116,16 +124,45 @@ include("_header.php");
 
 							<section id="third">
 								
-								<h2>Machine Installation</h2>
+								<h2><?php echo $page->what_title3; ?></h2>
 								<!--<img src="">-->
 								<p><?php echo $page->what_section4; ?></p>
+
+
+								<ul class="flex-container">
+
+									<?php
+
+									$images = $page->images_4;
+
+									if (count($images) > 0) {
+
+										foreach ($images as $image) {
+
+											echo "<li class='flex-item'>";
+
+												echo "<a href='$image->url'>";
+
+													echo "<img src='{$image->size(350,300)->url}' alt='{$image->description}'>";
+
+												echo "</a>";
+
+											echo "</li>";
+
+										}
+
+									}
+
+									?>
+
+								</ul>
 
 
 							</section>
 
 							<section id="fourth">
 
-								<h2>Past Projects</h2>
+								<h2><?php echo $page->what_title4; ?></h2>
 
 								<ul class="flex-container">
 
@@ -139,13 +176,17 @@ include("_header.php");
 
 											echo "<li class='flex-item projects_wrapper'>";
 
-												echo "<img src='{$image->url}' alt='{$image->description}'>";
+												echo "<a href='$image->url'>";
 
-												echo "<div class='project_description'>";
+													echo "<img src='{$image->url}' alt='{$image->description}'>";
 
-													echo "<p>$image->description</p>";
+													echo "<div class='project_description'>";
 
-												echo "</div>";
+														echo "<p>$image->description</p>";
+
+													echo "</div>";
+
+												echo "</a>";
 
 											echo "</li>";
 

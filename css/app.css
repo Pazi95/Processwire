@@ -261,7 +261,6 @@
   margin-top: 10px;
 }
 
-
 .icon-item{
 	width: 150px;
 }
@@ -273,6 +272,10 @@
 
 .flex-container a{
 	color:black;
+}
+
+.flex-item a:hover{
+	outline: solid thin black;
 }
 
 .about-pics{

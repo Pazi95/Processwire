@@ -32,7 +32,7 @@ include("_header.php");
 
 						<section id="first">
 								
-							<h2>Who We Are & Our History</h2>
+							<h2><?php echo $page->about_title1; ?></h2>
 							<!--<img src="http://images.hgmsites.net/med/car-repair_100311664_m.jpg">-->
 							<p><?php echo $page->about_section; ?></p>
 
@@ -40,7 +40,7 @@ include("_header.php");
 
 						<section id="second">
 
-							<h2>Gallery</h2>
+							<h2><?php echo $page->about_title2; ?></h2>
 							
 							<ul class="about-pics flex-container">
 
