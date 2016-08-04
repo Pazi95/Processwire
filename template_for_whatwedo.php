@@ -47,6 +47,8 @@ include("_header.php");
 							<section id="first">
 								
 								<h2><?php echo $page->what_title1; ?></h2>
+
+								<hr>
 								<!--<img src="">-->
 								<p><?php echo $page->what_section1; ?></p>
 
@@ -62,9 +64,9 @@ include("_header.php");
 
 											echo "<li class='flex-item'>";
 
-												echo "<a href='$image->url'>";
+												echo "<a href='$image->url' target='_blank'>";
 
-													echo "<img src='{$image->size(350,300)->url}' alt='{$image->description}'>";
+													echo "<img class='what_images' src='{$image->size(350,300)->url}' alt='{$image->description}'>";
 
 												echo "</a>";
 
@@ -83,6 +85,8 @@ include("_header.php");
 							<section id="second">
 								
 								<h2><?php echo $page->what_title2; ?></h2>
+
+								<hr>
 								<!--<img src="">-->
 								<p><?php echo $page->what_section3; ?></p>
 
@@ -98,9 +102,9 @@ include("_header.php");
 
 										echo "<li class='flex-item'>";
 
-											echo "<a href='$image->url'>";
+											echo "<a href='$image->url' target='_blank'>";
 
-												echo "<img src='{$image->size(350,300)->url}' alt='{$image->description}'>";
+												echo "<img class='what_images' src='{$image->size(350,300)->url}' alt='{$image->description}'>";
 
 											echo "</a>";
 
@@ -125,6 +129,8 @@ include("_header.php");
 							<section id="third">
 								
 								<h2><?php echo $page->what_title3; ?></h2>
+
+								<hr>
 								<!--<img src="">-->
 								<p><?php echo $page->what_section4; ?></p>
 
@@ -141,9 +147,9 @@ include("_header.php");
 
 											echo "<li class='flex-item'>";
 
-												echo "<a href='$image->url'>";
+												echo "<a href='$image->url' target='_blank'>";
 
-													echo "<img src='{$image->size(350,300)->url}' alt='{$image->description}'>";
+													echo "<img class='what_images' src='{$image->size(350,300)->url}' alt='{$image->description}'>";
 
 												echo "</a>";
 
@@ -164,6 +170,8 @@ include("_header.php");
 
 								<h2><?php echo $page->what_title4; ?></h2>
 
+								<hr>
+
 								<ul class="flex-container">
 
 								<?php 
@@ -176,9 +184,9 @@ include("_header.php");
 
 											echo "<li class='flex-item projects_wrapper'>";
 
-												echo "<a href='$image->url'>";
+												echo "<a href='$image->url' target='_blank'>";
 
-													echo "<img src='{$image->url}' alt='{$image->description}'>";
+													echo "<img class='what_images' src='{$image->size(550,400)->url}' alt='{$image->description}'>";
 
 													echo "<div class='project_description'>";
 

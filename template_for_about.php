@@ -10,6 +10,7 @@ include("_header.php");
 						<section class="top-title">
 								
 							<h2><?php echo $page->about_title1; ?></h2>
+							<hr>
 							<!--<img src="http://images.hgmsites.net/med/car-repair_100311664_m.jpg">-->
 							<p><?php echo $page->about_section; ?></p>
 
@@ -18,6 +19,8 @@ include("_header.php");
 						<section>
 
 							<h2><?php echo $page->about_title2; ?></h2>
+
+							<hr>
 							
 							<ul class="about-pics flex-container">
 
@@ -31,9 +34,9 @@ include("_header.php");
 
 										echo "<li class='flex-item about_wrapper'>";
 
-											echo "<a href='$image->url'>";
+											echo "<a href='$image->url' target='_blank'>";
 
-												echo "<img src='{$image->width(468)->url}' alt='{$image->description}'>";
+												echo "<img class='about_images' src='{$image->width(468)->url}' alt='{$image->description}'>";
 
 												echo "<div class='about_description'>";
 

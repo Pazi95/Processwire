@@ -155,8 +155,12 @@
 	color:#3e3e3e;
 }
 
-/*First Image on the Main Page*/
-.main-image{
+.section h1{
+	font-weight: bold;
+}
+
+/*Nearly All Pics*/
+.main-image, .what_images, .about_images{
 	border: 15px solid #CCCCFF;
 	border-radius: 5px;
 }
@@ -186,10 +190,10 @@
 
 .main-icons{
 	background-color:transparent;
+	padding-bottom:30px;
 }
 
 .about-pics{
-	background-image: url('http://www.publicdomainpictures.net/pictures/30000/velka/cork-board.jpg');
 	padding-bottom: 30px;
 	margin-bottom: 5px;
 }
@@ -214,7 +218,6 @@
 	border-top:none;
 }
 
-
 /*Descriptions of those images*/
 .description, .project_description, .about_description{
 	position:absolute;
@@ -229,9 +232,7 @@
 }
 
 .project_description, .about_description{
-	top:5px;
-	left:5px;
-	right: 5px;
+	top: 20px;
 }
 
 .project_description p, .about_description p{
@@ -278,7 +279,21 @@
   display: flex;
   
   -webkit-flex-flow: row wrap;
-  justify-content: space-around;
+  justify-content: center;
+}
+
+.flex-container_2 {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+
+	-webkit-flex-flow: column wrap;
 }
 
 .flex-item {

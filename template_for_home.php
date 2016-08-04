@@ -45,7 +45,7 @@ include("_header.php");
 
 									echo "<li class='flex-item'>";
 
-										echo "<a href='$image->url'>";
+										echo "<a href='$image->url' target='_blank'>";
 
 											echo "<img class='main-image' src='{$image->width(450)->url}' alt='{$image->description}'>";
 
@@ -74,51 +74,41 @@ include("_header.php");
 
 						<ul class="flex-container image-container">
 
-						<?php
+							<?php
 
-						$images = $page->services_images;
+							$images = $page->services_images;
 
-						if (count($images) > 0) {
+							$menus = array("Vehicle Maintenance and Repairs", "Welding and Fabrication Work", "Machine Installation");
 
-							foreach ($images as $image) {
+							$links = array("#first", "#second", "#third");
 
-								echo "<li class='flex-item flex-image'>";
+							if (count($images) > 0) {
 
-									echo "<img class='main-icons' src='{$image->size(150,150)->url}' alt='{$image->description}'>";
+								$i = 0;
 
-								echo "</li>";
+								foreach ($images as $image) {
+
+									echo "<li class='flex-container_2'>";
+
+										$url = $pages->get(1015)->url;
+
+										$url .= $links[$i];
+
+										echo "<img class='main-icons flex-item' src='{$image->size(210,210)->url}' alt='{$image->description}'>";
+
+										echo "<a class='button flex-item' href='$url'>$menus[$i]</a>";
+
+										$i++;
+
+									echo "</li>";
+
+
+								}
 
 							}
 
-						}	
-
-						?>
-
-						</ul>
-
-						<ul class="flex-container">
-
-							<?php 
-							$url = $pages->get(1015)->url;
-							$url .= "#first";  
 							?>
 
-							<li class="flex-item icon-item"><a class="button" href="<?php echo $url; ?>">Vehicle Maintenance and Repairs</a></li>
-
-							<?php 
-							$url = $pages->get(1015)->url;
-							$url .= "#second";  
-							?>
-
-							<li class="flex-item icon-item"><a class="button" href="<?php echo $url; ?>">Welding and Fabrication Work</a></li>
-
-							<?php 
-							$url = $pages->get(1015)->url;
-							$url .= "#third";
-							?>
-
-							<li class="flex-item icon-item"><a class="button" href="<?php echo $url; ?>">Machine Installation</a></li>
-						
 						</ul>
 
 
