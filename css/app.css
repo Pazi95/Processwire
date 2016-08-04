@@ -1,7 +1,7 @@
 /* ************ General ************ */
 *{
 	outline: none;
-	font-family:Tahoma;
+	font-family:Tahoma, sans-serif;
 	list-style-type: none;
 }
 
@@ -21,21 +21,25 @@
 }
 
 /* ************ Nav - Mobile ************ */
+/*Whole Bar*/
 .title-bar{
 	background-color: #1f48c5;
 	height: 60px;
 	padding-top: 17px;
 }
 
+/*Slide-In Off Canvas Menu*/
 #mobile-menu{
 	background-color: #1f48c5;
 	padding: 18px;
 }
 
+/*List items of menu above*/
 #mobile-menu li{
 	list-style: none;
 }
 
+/*Anchor tags of menu above*/
 #mobile-menu a{
 	color: white;
 	font-weight: bold;
@@ -44,52 +48,53 @@
 	display: block;
 }
 
+/*Hover effect for the anchor tags above*/
 #mobile-menu a:hover{
 	background-color: rgba(255, 255, 255, 0.1);
 }
 
+/*Right Logo for the mobile menu bar*/
 .top-bar-right__logo{
 	color: white;
-	font-size:auto;
 	line-height: 30px;
 }
 
+/*The "established" in the right logo*/
 .top-bar-right__logo span{
 	padding-left: 15px;
-	font-size: auto;
 	font-style: italic;
 }
 
-.credits span{
-	font-weight: bold;
-}
-
-.credits p{
-	font-size: 13px;
-}
-
-
 /* ************ Nav - Desktop ************ */
+/*Whole Nav Bar*/
 .nav-desktop{
 	background-color: #1f48c5;
 	height: 60px;
-	padding: 0px;
+	padding: 0;
 	font-weight:bold;
 }
 
+/*The unordered list in the desktop nav*/
 .nav-desktop .top-bar-right-menu{
 	line-height: 60px;
 	background-color: transparent;
 }
 
+/*The anchor tags of the same unordered list*/
 .nav-desktop .top-bar-right-menu__itemlink{
 	display: inline-block;
 	line-height: 60px;
-	padding-top: 0px;
-	padding-bottom: 0px;
+	padding-top: 0;
+	padding-bottom: 0;
 	color: white;
 }
 
+/*Hover effect for those anchor tags*/
+.nav-desktop .top-bar-right-menu__itemlink:hover{
+	background-color: rgba(255, 255, 255, 0.1);
+}
+
+/*Left logo for the desktop menu bar*/
 .top-bar-left__logo{
 	color: white;
 	line-height: 60px;
@@ -97,37 +102,30 @@
 	font-weight:bold;
 }
 
+/*The "established" in the left logo*/
 .top-bar-left__logo span{
 	padding-left: 15px;
 	font-size: 1.5vw;
 	font-style: italic;
 }
 
-.menu > li > a{
-	display: inline-block;
-	line-height: 60px;
-	padding-top: 0px;
-	padding-bottom: 0px;
-	color: white;
-}
-
-.nav-desktop .top-bar-right-menu__itemlink:hover{
-	background-color: rgba(255, 255, 255, 0.1);
-}
-
+/*CSS stuff to show which page you are on currently, current is a list item*/
 .current{
 	background-color:#f6f6ff;
 	font-size: 30px;
 }
 
+/*CSS stuff to show which page you are on currently*/
 .current a{
 	color:#1f48c5 !important;
 }
 
+/*CSS stuff to show which page you are on currently*/
 .current:hover{
 	background-color:#f6f6ff;
 }
 
+/*CSS stuff to show which page you are on currently*/
 .current a:hover{
 	color:#1f48c5;
 }
@@ -142,31 +140,82 @@
 .hero h1{
 	color:#3e3e3e;	
 	padding-top:20px;
-	margin-bottom: 0px;
+	margin-bottom: 0;
 }
 
 /* ************ Main Section ************ */
 .main{
-	padding: 0px 0px;
+	padding: 0 0;
 	background-color:#f6f6ff;
 }
 
 .main section{
 	height:auto;
-	border-bottom:0px;
+	border-bottom:0;
 	color:#3e3e3e;
 }
 
+/*First Image on the Main Page*/
 .main-image{
 	border: 15px solid #CCCCFF;
 	border-radius: 5px;
 }
 
+/*Wrappers for the images on the different pages*/
 .main-image-wrapper, .projects_wrapper, .about_wrapper{
 	float:left;
 	position:relative;
 }
 
+.main h3{
+	width: auto;
+}
+
+.main h1{
+	color: #3e3e3e;
+	text-align: center;
+}
+
+.main p{
+	color:#3e3e3e;
+}
+
+.main-about{
+	background-color: #f6f6ff;
+}
+
+.main-icons{
+	background-color:transparent;
+}
+
+.about-pics{
+	background-image: url('http://www.publicdomainpictures.net/pictures/30000/velka/cork-board.jpg');
+	padding-bottom: 30px;
+	margin-bottom: 5px;
+}
+
+.about-pics a:hover{
+	outline: solid thin black;
+}
+
+.sectionfour{
+	padding: 0 0 10px 0;
+}
+
+.sections p{
+	margin:0 0;
+}
+
+.top-title{
+	padding-top: 20px;
+}
+
+#first{
+	border-top:none;
+}
+
+
+/*Descriptions of those images*/
 .description, .project_description, .about_description{
 	position:absolute;
 	top:30px;
@@ -185,24 +234,27 @@
 	right: 5px;
 }
 
+.project_description p, .about_description p{
+	color: white;
+	padding: 10px 10px;
+	margin: 0 0;
+}
+
 .description-content{
 	padding: 10px 10px;
 	margin: 0 0;
 }
 
-.main h3{
-	width: auto;
+/*Credits on main page*/
+.credits span{
+	font-weight: bold;
 }
 
-.main h1{
-	color: #3e3e3e;
-	text-align: center;
+.credits p{
+	font-size: 13px;
 }
 
-.main p{
-	color:#3e3e3e;
-}
-
+/*video on what we do page*/
 .flex-video iframe{
 	height: 500px;
 	width: 100%;
@@ -212,32 +264,7 @@
 	padding-bottom: 500px; 
 }
 
-
-.project_description p, .about_description p{
-	color: white;
-	padding: 10px 10px;
-	margin: 0 0;
-}
-
-.main-about{
-	background-color: #f6f6ff;
-}
-
-/* What we do page*/
-.sectionfour{
-	padding: 0 0;
-	padding-bottom:10px;
-}
-
-.sections p{
-	margin:0 0;
-}
-
 /* Flex Box */
-
-.main-icons{
-	background-color:transparent;
-}
 
 .flex-container {
   padding: 0;
@@ -261,11 +288,6 @@
   margin-top: 10px;
 }
 
-.icon-item{
-	width: 150px;
-}
-
-
 .main .flex-container{
 	justify-content: space-around;
 }
@@ -278,24 +300,24 @@
 	outline: solid thin black;
 }
 
-.about-pics{
-	background-image: url('http://www.publicdomainpictures.net/pictures/30000/velka/cork-board.jpg');
-	padding-bottom: 30px;
-	margin-bottom: 5px;
+/*Main Page Icon*/
+
+.icon-item{
+	width: 150px;
 }
 
-.about-pics a:hover{
-	outline: solid thin black;
+a.button{
+	color:white;
+	background-color:#1f48c5;
 }
 
-
-
-/* ************ Magellan ************ */ 
+/* ************ Magellan ************ */
 .sticky_menu li > a{
+	line-height: 30px;
+	height:50px;
 	color:#1f48c5;
 	display:inline-block;
 	width:100%;
-	font-size:auto;
 }
 
 .sticky_menu li > a:hover{
@@ -309,27 +331,10 @@
 	border-bottom:solid #1f48c5;
 }
 
-sticky_menu li > a:focus{
-	color:red;
-}
-
-a.button{
-	color:white;
-	background-color:#1f48c5;
-}
-
-#first{
-	border-top:none;
-}
-
 /* Contact Us Page */
 .main-contacts{
-	padding: 20px 0px;
+	padding: 20px 0;
 	background-color: #f6f6ff;
-}
-
-.main-contacts a{
-	float:middle;
 }
 
 #googleMap{
@@ -381,12 +386,12 @@ a.button{
 /* ************ Footer ************ */
 footer{
 	background-color: #1f48c5;
-	padding: 40px 0px;
+	padding: 40px 0;
 }
 
 footer hr{
 	border-color: rgba(255, 255, 255, 0.2);
-	margin: 10px 0px;
+	margin: 10px 0;
 }
 
 footer a {

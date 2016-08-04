@@ -9,7 +9,7 @@ include("_header.php");
 
 				  <div class="sticky show-for-large" id="example" data-sticky data-margin-top="0" style="width:100%;" data-top-anchor="stickhere">
 
-					<nav data-magellan data-bar-offset="37" class="sticky_menu">
+					<nav data-magellan data-bar-offset="28" class="sticky_menu">
 
 					  <ul id="stickhere" class="horizontal menu expanded">
 

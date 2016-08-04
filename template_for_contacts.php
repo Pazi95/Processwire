@@ -8,7 +8,7 @@ include("_header.php");
 
 					<div class="wrap row">
 						
-						<div class="contactinfo small-12 large-6 column">
+						<div class="contactinfo small-12 large-6 columns">
 
 							<h2>Contact Information</h2>
 
@@ -36,7 +36,7 @@ include("_header.php");
 
 						</div>
 
-						<div class="maps small-12 large-6 column">
+						<div class="maps small-12 large-6 columns">
 
 							<div id="googleMap"></div>
 

@@ -2,35 +2,12 @@
 $config->urls->templates;
 include("_header.php");
 ?>
-
-				<!-- Sticky Nav -->
-
-				<div class="sticky_container" data-sticky-container>
-
-				  <div class="sticky show-for-large" id="example" data-sticky data-margin-top="0" style="width:100%;" data-top-anchor="stickhere">
-
-					<nav data-magellan data-bar-offset="37" class="sticky_menu">
-
-					  <ul id="stickhere" class="horizontal menu expanded">
-
-						<li><a href="#top">To The Top</a></li>
-						<li><a href="#first">Who We Are</a></li>
-						<li><a href="#second">Gallery</a></li>
-
-					  </ul>
-					
-					</nav>
-				  
-				  </div>
-				
-				</div>
-
 				<!-- Main Section -->
 				<section class="main-about main">
 
 					<div class="wrap sections sections-about">
 
-						<section id="first">
+						<section class="top-title">
 								
 							<h2><?php echo $page->about_title1; ?></h2>
 							<!--<img src="http://images.hgmsites.net/med/car-repair_100311664_m.jpg">-->
@@ -38,7 +15,7 @@ include("_header.php");
 
 						</section>
 
-						<section id="second">
+						<section>
 
 							<h2><?php echo $page->about_title2; ?></h2>
 							
